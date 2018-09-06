@@ -18,9 +18,11 @@ My personal blog with Hexo &amp; NexT
 - 03:00:45 遇到问题 
     - 问题描述:
         在使用 hexo d 部署的时候, 出现下面这样的错误
+        ```bash
         remote: Permission to NSDingFan/NSDingFan.github.io.git denied to NSDingFanTest.
         fatal: unable to access 'https://github.com/NSDingFan/NSDingFan.github.io.git/': The requested URL returned error: 403
-    
+        ```
+
     - 问题原因:
         很显然, github用户不对, 应该是 NSDingFan 而不是 NSDingFanTest
         由于我昨天在用那个账号进行过测试,所以电脑(Mac)记住了那个用户.

@@ -1,0 +1,13 @@
+# 由vscode产生的文件
+.history
+
+# hexo用于部署的文件
+public/
+
+# hexo在本地文件夹安装的文件(不需要上传)
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+.deploy*/

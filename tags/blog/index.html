@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="">
+<html class="theme-next pisces use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -84,7 +84,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Pisces',
     version: '6.4.1',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
@@ -114,7 +114,7 @@
 <meta property="og:url" content="http://yoursite.com/tags/blog/index.html">
 <meta property="og:site_name" content="DF Blog">
 <meta property="og:description" content="Hi! 这里是DF, 一个在成长中的程序员。">
-<meta property="og:locale" content="default">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DF Blog">
 <meta name="twitter:description" content="Hi! 这里是DF, 一个在成长中的程序员。">
@@ -134,7 +134,7 @@
   };
 </script>
 
-  <title>Tag: blog | DF Blog</title>
+  <title>标签: blog | DF Blog</title>
   
 
 
@@ -174,7 +174,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -204,7 +204,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -224,7 +224,7 @@
           
           <li class="menu-item menu-item-home">
     <a href="/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
   </li>
         
         
@@ -232,7 +232,7 @@
           
           <li class="menu-item menu-item-about">
     <a href="/about/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
   </li>
         
         
@@ -240,7 +240,7 @@
           
           <li class="menu-item menu-item-tags menu-item-active">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
   </li>
         
         
@@ -248,15 +248,15 @@
           
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
   </li>
         
         
         
           
-          <li class="menu-item menu-item-my-old-blog">
-    <a href="/blog/{:target="_blank"}" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-external-link-alt"></i> <br />my-old-blog</a>
+          <li class="menu-item menu-item-commonweal">
+    <a href="/404/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />公益 404</a>
   </li>
 
       
@@ -320,7 +320,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>blog<small>Tag</small>
+        <h1>blog<small>标签</small>
         </h1>
       </div>
 
@@ -390,6 +390,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="DingFan" />
+            
               <p class="site-author-name" itemprop="name">DingFan</p>
               <p class="site-description motion-element" itemprop="description">Hi! 这里是DF, 一个在成长中的程序员。</p>
           </div>
@@ -402,7 +406,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">3</span>
-                    <span class="site-state-item-name">posts</span>
+                    <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
@@ -437,7 +441,7 @@
                       
                     
                     <span class="site-state-item-count">10</span>
-                    <span class="site-state-item-name">tags</span>
+                    <span class="site-state-item-name">标签</span>
                   
                 </div>
               
@@ -490,7 +494,7 @@
 
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -555,6 +559,8 @@
 
 
 
+  
+
 
 
 
@@ -572,6 +578,11 @@
   
   
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script id="ribbon" type="text/javascript" size="300" alpha="0.6"  zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   
 
 

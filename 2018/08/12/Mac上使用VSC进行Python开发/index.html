@@ -1,19 +1,120 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+
+
+
+
+
+
+
+
+
+
+
 
   
-  <title>Mac 上使用 Visual Studio Code 进行Python开发 | DF Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在Visual Studio Code 的官方网站中，已经有在 VSCode 上使用 Python 的详细配置了，  链接：Python in Visual Studio Code{:target=”_blank”}  Python 的安装 (macOS)1. 检查已安装的 Python 版本 检查是否安装了python2  12345$ pythonPython 2.7.15 (default">
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.4.1" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.4.1" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.4.1',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="在Visual Studio Code 的官方网站中，已经有在 VSCode 上使用 Python 的详细配置了，  链接：Python in Visual Studio Code{:target=”_blank”}   Python 的安装 (macOS)检查已安装的 Python 版本 检查是否安装了python2  12345$ pythonPython 2.7.15 (default,">
 <meta name="keywords" content="Python,VS Codo,配置,yapf,flake8">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac 上使用 Visual Studio Code 进行Python开发">
 <meta property="og:url" content="http://NSDingFan.github.io/2018/08/12/Mac上使用VSC进行Python开发/index.html">
 <meta property="og:site_name" content="DF Blog">
-<meta property="og:description" content="在Visual Studio Code 的官方网站中，已经有在 VSCode 上使用 Python 的详细配置了，  链接：Python in Visual Studio Code{:target=”_blank”}  Python 的安装 (macOS)1. 检查已安装的 Python 版本 检查是否安装了python2  12345$ pythonPython 2.7.15 (default">
+<meta property="og:description" content="在Visual Studio Code 的官方网站中，已经有在 VSCode 上使用 Python 的详细配置了，  链接：Python in Visual Studio Code{:target=”_blank”}   Python 的安装 (macOS)检查已安装的 Python 版本 检查是否安装了python2  12345$ pythonPython 2.7.15 (default,">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://nsdingfan.github.io/images/post/Snip20180812_10.png">
 <meta property="og:image" content="http://nsdingfan.github.io/images/post/Snip20180812_12.png">
@@ -24,88 +125,274 @@
 <meta property="og:image" content="http://nsdingfan.github.io/images/post/Snip20180812_13.png">
 <meta property="og:image" content="http://nsdingfan.github.io/images/post/Snip20180812_12.png">
 <meta property="og:image" content="http://nsdingfan.github.io/images/post/Snip20180822_5.png">
-<meta property="og:updated_time" content="2018-09-07T13:09:31.024Z">
+<meta property="og:updated_time" content="2018-09-07T14:32:24.300Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac 上使用 Visual Studio Code 进行Python开发">
-<meta name="twitter:description" content="在Visual Studio Code 的官方网站中，已经有在 VSCode 上使用 Python 的详细配置了，  链接：Python in Visual Studio Code{:target=”_blank”}  Python 的安装 (macOS)1. 检查已安装的 Python 版本 检查是否安装了python2  12345$ pythonPython 2.7.15 (default">
+<meta name="twitter:description" content="在Visual Studio Code 的官方网站中，已经有在 VSCode 上使用 Python 的详细配置了，  链接：Python in Visual Studio Code{:target=”_blank”}   Python 的安装 (macOS)检查已安装的 Python 版本 检查是否安装了python2  12345$ pythonPython 2.7.15 (default,">
 <meta name="twitter:image" content="http://nsdingfan.github.io/images/post/Snip20180812_10.png">
+
+
+
+
+
+
+  <link rel="canonical" href="http://NSDingFan.github.io/2018/08/12/Mac上使用VSC进行Python开发/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Mac 上使用 Visual Studio Code 进行Python开发 | DF Blog</title>
   
-    <link rel="alternate" href="/atom.xml" title="DF Blog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">DF Blog</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">Stay Hungry. Stay Foolish.</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://NSDingFan.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-Mac上使用VSC进行Python开发" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/12/Mac上使用VSC进行Python开发/" class="article-date">
-  <time datetime="2018-08-11T16:00:00.000Z" itemprop="datePublished">2018-08-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
   
-    <h1 class="article-title" itemprop="name">
-      Mac 上使用 Visual Studio Code 进行Python开发
-    </h1>
+  
+    
   
 
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">DF Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Stay Hungry. Stay Foolish.</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://NSDingFan.github.io/2018/08/12/Mac上使用VSC进行Python开发/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DingFan">
+      <meta itemprop="description" content="Hi! 这里是DF, 一个在成长中的程序员。">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DF Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Mac 上使用 Visual Studio Code 进行Python开发
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-08-12 00:00:00" itemprop="dateCreated datePublished" datetime="2018-08-12T00:00:00+08:00">2018-08-12</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-09-07 22:32:24" itemprop="dateModified" datetime="2018-09-07T22:32:24+08:00">2018-09-07</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
       
         <blockquote>
 <p>在Visual Studio Code 的官方网站中，已经有在 VSCode 上使用 Python 的详细配置了， </p>
 <p>链接：<a href="https://code.visualstudio.com/docs/languages/python" target="_blank" rel="noopener">Python in Visual Studio Code</a>{:target=”_blank”}</p>
 </blockquote>
-<h2 id="Python-的安装-macOS"><a href="#Python-的安装-macOS" class="headerlink" title="Python 的安装 (macOS)"></a>Python 的安装 (macOS)</h2><h4 id="1-检查已安装的-Python-版本"><a href="#1-检查已安装的-Python-版本" class="headerlink" title="1. 检查已安装的 Python 版本"></a>1. 检查已安装的 Python 版本</h4><ol>
+<hr>
+<h1 id="Python-的安装-macOS"><a href="#Python-的安装-macOS" class="headerlink" title="Python 的安装 (macOS)"></a>Python 的安装 (macOS)</h1><h2 id="检查已安装的-Python-版本"><a href="#检查已安装的-Python-版本" class="headerlink" title="检查已安装的 Python 版本"></a>检查已安装的 Python 版本</h2><ol>
 <li><p>检查是否安装了python2</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ python</span><br><span class="line">Python 2.7.15 (default, Jun 17 2018, 12:46:58) </span><br><span class="line">[GCC 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.2)] on darwin</span><br><span class="line">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
 </li>
@@ -116,7 +403,7 @@
 <blockquote>
 <p>如果得到以上输出，则表示对应的版本已安装。</p>
 </blockquote>
-<h4 id="2-使用-Homebrew-来安装-Python3"><a href="#2-使用-Homebrew-来安装-Python3" class="headerlink" title="2. 使用 Homebrew 来安装 Python3"></a>2. 使用 Homebrew 来安装 Python3</h4><ol>
+<h2 id="使用-Homebrew-来安装-Python3"><a href="#使用-Homebrew-来安装-Python3" class="headerlink" title="使用 Homebrew 来安装 Python3"></a>使用 Homebrew 来安装 Python3</h2><ol>
 <li><p>安装Homebrew<br> Homebrew依赖于Apple包Xcode，需要先进行安装。出现的对话框点OK即可。</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ xcode-select --install</span><br></pre></td></tr></table></figure>
 <p> 安装<a href="https://brew.sh/index_zh-cn" target="_blank" rel="noopener">Homebrew</a>：</p>
@@ -132,9 +419,10 @@
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ python3 --version</span><br><span class="line">Python 3.6.6</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h2 id="VSCode-的配置"><a href="#VSCode-的配置" class="headerlink" title="VSCode 的配置"></a>VSCode 的配置</h2><h4 id="1-安装VSCode的Python扩展插件"><a href="#1-安装VSCode的Python扩展插件" class="headerlink" title="1. 安装VSCode的Python扩展插件"></a>1. 安装VSCode的Python扩展插件</h4><!--[](){:target="_blank"}-->
+<hr>
+<h1 id="VSCode-的配置"><a href="#VSCode-的配置" class="headerlink" title="VSCode 的配置"></a>VSCode 的配置</h1><h2 id="安装VSCode的Python扩展插件"><a href="#安装VSCode的Python扩展插件" class="headerlink" title="安装VSCode的Python扩展插件"></a>安装VSCode的Python扩展插件</h2><!--[](){:target="_blank"}-->
 <p><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank" rel="noopener"> <img src="/images/post/Snip20180812_10.png" alt="点击前往安装"></a><br>    点击图片下的链接可以前往安装，直接点击Install安装即可。或者也可以直接在VSCode的扩展栏（Shift + Command + X）中搜索Python，安装下载量最高的那个。安装完成后，就可以使用VSCode编辑python代码了，按F5即可进行debug。</p>
-<h4 id="2-设置调试使用的-Python-版本"><a href="#2-设置调试使用的-Python-版本" class="headerlink" title="2. 设置调试使用的 Python 版本"></a>2. 设置调试使用的 Python 版本</h4><p>Mac上自带的 Python 版本为 2.7.x，VSCode 的调试（Python:Terminal(intergrated）)默认会使用系统自带的 Python 版本。而如果我们另外安装了 Python3，希望用 Python3 进行调试的时候，就需要修改一下  VSCode 的设置了。</p>
+<h2 id="设置调试使用的-Python-版本"><a href="#设置调试使用的-Python-版本" class="headerlink" title="设置调试使用的 Python 版本"></a>设置调试使用的 Python 版本</h2><p>Mac上自带的 Python 版本为 2.7.x，VSCode 的调试（Python:Terminal(intergrated）)默认会使用系统自带的 Python 版本。而如果我们另外安装了 Python3，希望用 Python3 进行调试的时候，就需要修改一下  VSCode 的设置了。</p>
 <p>设置步骤:</p>
 <ol>
 <li><p>打开VSCode用户设置（Code - 首选项 - 设置）    </p>
@@ -149,7 +437,7 @@
 <p>以下两个插件需要预先安装<code>pip</code></p>
 </blockquote>
 <!--MarkDown 加锚点-->
-<h4 id="3-配置yapf"><a href="#3-配置yapf" class="headerlink" title="3. 配置yapf"></a>3. 配置yapf</h4><ol>
+<h2 id="配置yapf"><a href="#配置yapf" class="headerlink" title="配置yapf"></a>配置yapf</h2><ol>
 <li><p>yapf简介<br> <a href="https://github.com/google/yapf" target="_blank" rel="noopener">yapf</a>{:target=”_blank”}是一个源代码格式化工具，可以辅助我们进行代码的格式化，安装完成后，通过快捷键 <code>Shift + Alt + F</code> 执行代码的格式化。</p>
 </li>
 <li><p>安装步骤</p>
@@ -172,7 +460,7 @@
 <pre><code>2. 更多yafp用法参考
 
     在终端中输入：`$ yapf -h`，查看相关帮助。
-</code></pre><h4 id="4-配置flake8"><a href="#4-配置flake8" class="headerlink" title="4. 配置flake8"></a>4. 配置flake8</h4><ol>
+</code></pre><h2 id="配置flake8"><a href="#配置flake8" class="headerlink" title="配置flake8"></a>配置flake8</h2><ol>
 <li><p>flake8 简介</p>
 <p> <a href="https://pypi.org/project/flake8/" target="_blank" rel="noopener">Flake8</a>{:target=”_blank”}包装了下列工具：</p>
 <ul>
@@ -199,12 +487,14 @@
 </ol>
 </li>
 </ol>
-<h2 id="VSCode-的其他设置"><a href="#VSCode-的其他设置" class="headerlink" title="VSCode 的其他设置"></a>VSCode 的其他设置</h2><ol>
+<hr>
+<h1 id="VSCode-的其他设置"><a href="#VSCode-的其他设置" class="headerlink" title="VSCode 的其他设置"></a>VSCode 的其他设置</h1><ol>
 <li><p>设置代码长度</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 80，120 表示分别在80和120字符处显示一条辅助线，可以进行设置和调整。</span><br><span class="line">&quot;editor.rulers&quot;: [80,120]</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<hr>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
 <li><a href="https://www.pixiv.net/member.php?id=6675416" target="_blank" rel="noopener">post-image: pixiv-id-6675416</a>{:target=”_blank”}</li>
 <li><a href="https://www.cnblogs.com/tangxin-blog/p/6065017.html" target="_blank" rel="noopener">vscode 编写python如何禁止 flake8 提示 line too long</a>{:target=”_blank”}</li>
 <li><a href="https://book.douban.com/subject/26829016/" target="_blank" rel="noopener">《Python编程：从入门到实践》</a>{:target=”_blank”}</li>
@@ -212,134 +502,386 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://NSDingFan.github.io/2018/08/12/Mac上使用VSC进行Python开发/" data-id="cjls0g9i20000vc7go126g4n1" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VS-Codo/">VS Codo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flake8/">flake8</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/yapf/">yapf</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/配置/">配置</a></li></ul>
 
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+            <a href="/tags/VS-Codo/" rel="tag"># VS Codo</a>
+          
+            <a href="/tags/配置/" rel="tag"># 配置</a>
+          
+            <a href="/tags/yapf/" rel="tag"># yapf</a>
+          
+            <a href="/tags/flake8/" rel="tag"># flake8</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/24/我的第一篇博客/" rel="next" title="我的第一篇Blog">
+                <i class="fa fa-chevron-left"></i> 我的第一篇Blog
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/07/blog搭建踩坑指南/" rel="prev" title="blog搭建踩坑指南">
+                blog搭建踩坑指南 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
     </footer>
   </div>
   
-    
-<nav id="article-nav">
   
-    <a href="/2018/09/07/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
         
-          Hello World
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">DingFan</p>
+              <p class="site-description motion-element" itemprop="description">Hi! 这里是DF, 一个在成长中的程序员。</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python-的安装-macOS"><span class="nav-number">1.</span> <span class="nav-text">Python 的安装 (macOS)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#检查已安装的-Python-版本"><span class="nav-number">1.1.</span> <span class="nav-text">检查已安装的 Python 版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-Homebrew-来安装-Python3"><span class="nav-number">1.2.</span> <span class="nav-text">使用 Homebrew 来安装 Python3</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#VSCode-的配置"><span class="nav-number">2.</span> <span class="nav-text">VSCode 的配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装VSCode的Python扩展插件"><span class="nav-number">2.1.</span> <span class="nav-text">安装VSCode的Python扩展插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置调试使用的-Python-版本"><span class="nav-number">2.2.</span> <span class="nav-text">设置调试使用的 Python 版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置yapf"><span class="nav-number">2.3.</span> <span class="nav-text">配置yapf</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置flake8"><span class="nav-number">2.4.</span> <span class="nav-text">配置flake8</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#VSCode-的其他设置"><span class="nav-number">3.</span> <span class="nav-text">VSCode 的其他设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
         
       </div>
-    </a>
-  
-  
-    <a href="/2018/07/24/我的第一篇博客/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">我的第一篇Blog</div>
-    </a>
-  
-</nav>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">DingFan</span>
 
   
-</article>
 
-</section>
+  
+</div>
+
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Muse</a> v6.4.1</div>
+
+
+
+
         
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VS-Codo/">VS Codo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flake8/">flake8</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/macOS/">macOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yapf/">yapf</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生活/">生活</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/配置/">配置</a></li></ul>
-    </div>
-  </div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/VS-Codo/" style="font-size: 10px;">VS Codo</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/flake8/" style="font-size: 10px;">flake8</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/macOS/" style="font-size: 10px;">macOS</a> <a href="/tags/yapf/" style="font-size: 10px;">yapf</a> <a href="/tags/生活/" style="font-size: 10px;">生活</a> <a href="/tags/配置/" style="font-size: 10px;">配置</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li></ul>
-    </div>
-  </div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2018/09/07/blog搭建踩坑指南/">blog搭建踩坑指南</a>
-          </li>
-        
-          <li>
-            <a href="/2018/09/07/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2018/08/12/Mac上使用VSC进行Python开发/">Mac 上使用 Visual Studio Code 进行Python开发</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/24/我的第一篇博客/">我的第一篇Blog</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
 
-  
-</aside>
+
+
+
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 DingFan<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+	
+    
 
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
-
+    
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>

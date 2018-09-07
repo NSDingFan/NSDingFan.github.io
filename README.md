@@ -36,4 +36,5 @@ My personal blog with Hexo &amp; NexT
             原因是Mac保存了上次输入的账号密码，自动填写了。
             所以解决办法是cmd+space，输入keychain access，选择左上方login+左下方password，搜索github，找到对应的记录，删除就好了。
 
+- 22:30:19 更换主题next,开始配置新主题的相关工作
 

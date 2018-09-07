@@ -8,12 +8,13 @@ subtitle: Stay Hungry. Stay Foolish.
 description: Hi! 这里是DF, 一个在成长中的程序员。
 keywords:
 author: DingFan
-language:
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://nsdf.top
+# url: http://NSDingFan.github.io
+urs: https://nsdf.top
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -85,3 +86,9 @@ deploy:
   name: NSDingFan
   email: df_works@163.com
   
+# 站内搜索 
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000

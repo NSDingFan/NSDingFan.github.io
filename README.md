@@ -47,3 +47,7 @@ My personal blog with Hexo &amp; NexT
         4. 接下来是需要在新建的 username.github.io 库中 完成基于hexo的blog搭建即可.
 
 - 23:18:17 添加自定义域名
+
+# 2018年09月08日
+
+- 02:56:01 完成了主题的一些自定义,将之前blog中文章迁移至新blog

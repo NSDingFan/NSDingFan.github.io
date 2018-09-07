@@ -60,7 +60,7 @@ rss:
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  #since: 2015
+  since: 2018
 
   # Icon between year and copyright info.
   icon:
@@ -68,9 +68,11 @@ footer:
     # `heart` is recommended with animation in red (#ff0000).
     name: user
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
     color: "#808080"
+    # color: "#EC4A3B"
+
 
   # If not defined, will be used `author` from Hexo main config.
   copyright:
@@ -79,13 +81,13 @@ footer:
     # Hexo link (Powered by Hexo).
     enable: true
     # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
+    version: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
+    enable: false
     # Version info of NexT after scheme info (vX.X.X).
-    version: true
+    version: false
   # -------------------------------------------------------------
   # Any custom text can be defined here.
   #custom_text: Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a>
@@ -118,13 +120,14 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  # about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
+  # commonweal: /404/ || heartbeat
+  # my-old-blog: /blog/{:target="_blank"} || link
 
 # Enable/Disable menu icons / item badges.
 menu_settings:
@@ -136,10 +139,10 @@ menu_settings:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-#scheme: Gemini
+# scheme: Muse
+# scheme: Mist
+scheme: Pisces
+# scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -154,9 +157,12 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+social:
+  GitHub: https://github.com/NSDingFan || github
+  E-Mail: mailto:df_works@163.com || envelope
+  微博: http://weibo.com/u/6590783493 || weibo
+  知乎: http://www.zhihu.com/people/ding-fan-7-27 || zhihu
+  简书: https://www.jianshu.com/u/272faf29687d || book
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -179,24 +185,27 @@ social_icons:
 # Usage: `permalink || title`
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the title and aria-label name.
-#github_banner: https://github.com/yourname || Follow me on GitHub
+# github_banner: https://github.com/yourname || Follow me on GitHub
 
 # Blog rolls
 links_icon: link
 links_title: Links
 links_layout: block
 #links_layout: inline
-#links:
+links:
   #Title: http://example.com/
+  OurCoders: http://ourcoders.com/
+  CoolShell: https://coolshell.cn/
+
 
 # Sidebar Avatar
-avatar:
+avatar: 
   # in theme directory(source/images): /images/avatar.gif
   # in site  directory(source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: #/images/avatar.gif
-  # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  url: /images/avatar.png
+  # If true, the avatar would be dispa#lyed in circle.
+  rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
   opacity: 1
   # If true, the avatar would be rotated with the cursor.
@@ -230,10 +239,10 @@ sidebar:
   #width: 300
 
   # Sidebar Display, available value (only for Muse | Mist):
-  #  - post    expand on posts automatically. Default.
-  #  - always  expand for all pages automatically
-  #  - hide    expand only when click on the sidebar toggle icon.
-  #  - remove  Totally remove sidebar including sidebar toggle.
+  #  - post    默认行为，在文章页面（拥有目录列表）时显示
+  #  - always  在所有页面中都显示
+  #  - hide    在所有页面中都隐藏（可以手动展开）
+  #  - remove  完全移除
   display: post
   #display: always
   #display: hide
@@ -241,12 +250,13 @@ sidebar:
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
+  
 
   # Back to top in sidebar (only for Pisces | Gemini).
   b2t: false
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
@@ -260,7 +270,7 @@ sidebar:
 scroll_to_more: true
 
 # Automatically saving scroll position on each post/page in cookies.
-save_scroll: false
+save_scroll: true
 
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
@@ -298,9 +308,9 @@ codeblock:
   border_radius:
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result
-    show_result: false
+    show_result: true
 
 # Wechat Subscriber
 #wechat_subscriber:
@@ -338,6 +348,23 @@ post_edit:
   enable: false
   url: https://github.com/theme-next/theme-next.org/_posts/tree/master/ # Link for view source.
 # url: https://github.com/theme-next/theme-next.org/_posts/edit/master/ # Link for fork & edit.
+
+
+
+# ---------------------------------------------------------------
+# 设置页面文章的篇数
+# ---------------------------------------------------------------
+
+# index_generator:
+#   per_page: 5
+
+# archive_generator:
+#   per_page: 20
+#   yearly: true
+#   monthly: true
+
+# tag_generator:
+#   per_page: 10
 
 
 # ---------------------------------------------------------------
@@ -702,7 +729,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
@@ -825,7 +852,7 @@ pace_theme: pace-theme-minimal
 
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
@@ -843,7 +870,7 @@ canvas_sphere: false
 # alpha: The transparency of the ribbon.
 # zIndex: The display level of the ribbon.
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 300
   alpha: 0.6
   zIndex: -1

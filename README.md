@@ -43,5 +43,7 @@ My personal blog with Hexo &amp; NexT
         2. 在我的旧站点里创建一个名为 gh-pages 的分支
         3. 打开项目的Setting页面,在GitHub Pages一节,你会看到 Your site is published at https://username.github.io/blog/ 这样的消息,以后就可以通过这个域名访问老站点了.
             - 所以理论上说,可以在一个github账户下简历无数个站点,但是只能建立在域名上.
+            - 参考: https://stackoverflow.com/a/15564009
         4. 接下来是需要在新建的 username.github.io 库中 完成基于hexo的blog搭建即可.
 
+- 23:18:17 添加自定义域名

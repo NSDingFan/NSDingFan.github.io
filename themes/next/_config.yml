@@ -120,7 +120,7 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  # about: /about/ || user
+  about: /about/ || user
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
@@ -208,8 +208,8 @@ avatar:
   rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
   opacity: 1
-  # If true, the avatar would be rotated with the cursor.
-  rotated: false
+  # If true, the avatar would be rotated with the cursor. 头像旋转
+  rotated: true
 
 # Table Of Contents in the Sidebar
 toc:
@@ -853,6 +853,7 @@ pace_theme: pace-theme-minimal
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
 canvas_nest: true
+# canvas_nest: false
 
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three

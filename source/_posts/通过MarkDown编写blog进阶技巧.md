@@ -10,6 +10,61 @@ tags:
     - 图片链接
     - blog技巧
 ---
+## 在MarkDown中插入链接的一些技巧
+
+#### 1. 直接添加链接
+```
+<http://nsdf.top/>
+```
+<http://nsdf.top/>
+
+#### 2. 一般的链接
+```MarkDown
+丁帆的blog： [nsdf.top](http://nsdf.top/)
+
+丁帆的blog： [nsdf.top](http://nsdf.top/ "丁帆的博客")
+```
+丁帆的blog： [nsdf.top](http://nsdf.top/)
+
+丁帆的blog： [nsdf.top](http://nsdf.top/ "丁帆的博客")
+
+<!-- more --> 
+
+#### 3. 相对链接
+
+链接至自己blog中的其他文章等内容：
+```
+[个人博客搭建踩坑指南](/2018/08/18/一些推荐的文章/)
+[封面图片](/img/post_bg_apple_ad.jpg)
+```
+
+[个人博客搭建踩坑指南](/2018/08/18/一些推荐的文章/)
+
+[封面图片](/img/post_bg_apple_ad.jpg) 
+
+> 注:此为Jekyll内容,待修改
+
+#### 4. 在图片中嵌入链接
+
+```
+[![apple-touch-icon](/images/post/blog-logo.png))](http://nsdf.top/)
+```
+
+[![apple-touch-icon](/images/post/blog-logo.png))](http://nsdf.top/)
+
+> 注: 此功能在基于Jekyll的blog中为点击图片前往链接;在基于Heox+NexT的blog中,为点击图片下方链接跳转.  !!!待修改
+
+
+#### 5. 在新标签中打开连接
+```
+[nsdf.top](http://nsdf.top/){:target="_blank"}
+```
+[nsdf.top](http://nsdf.top/){:target="_blank"}
+
+> 注: 在之前使用的基于Jekyll的Blog中,这个功能可用且需要. 在当前基于Heox+NexT的blog中,不需要这样写.
+
+
+
 ## 在MarkDown中插入视频
 
 在MarkDown中，只要使用 `<iframe>` 标签就可以方便的插入视频了。
@@ -17,8 +72,6 @@ tags:
 关于 `<iframe>` 的更多信息： [w3school-HTML-iframe 标签](http://www.w3school.com.cn/tags/tag_iframe.asp)
 
 下面的示例中，分别演示了插入 腾讯，优酷，YouTube，哔哩哔哩 这几个网站的视频的操作
-
-<!-- more --> 
 
 ### 示例：
 
@@ -105,53 +158,3 @@ tags:
 
 
 
-## 在MarkDown中插入链接的一些技巧
-
-#### 1. 直接添加链接
-```
-<http://nsdf.top/>
-```
-<http://nsdf.top/>
-
-#### 2. 一般的链接
-```MarkDown
-丁帆的blog： [nsdf.top](http://nsdf.top/)
-
-丁帆的blog： [nsdf.top](http://nsdf.top/ "丁帆的博客")
-```
-丁帆的blog： [nsdf.top](http://nsdf.top/)
-
-丁帆的blog： [nsdf.top](http://nsdf.top/ "丁帆的博客")
-
-#### 3. 相对链接
-
-链接至自己blog中的其他文章等内容：
-```
-[个人博客搭建踩坑指南](/2018/08/18/一些推荐的文章/)
-[封面图片](/img/post_bg_apple_ad.jpg)
-```
-
-[个人博客搭建踩坑指南](/2018/08/18/一些推荐的文章/)
-
-[封面图片](/img/post_bg_apple_ad.jpg) 
-
-> 注:此为Jekyll内容,待修改
-
-#### 4. 在图片中嵌入链接
-
-```
-[![apple-touch-icon](/images/post/blog-logo.png))](http://nsdf.top/)
-```
-
-[![apple-touch-icon](/images/post/blog-logo.png))](http://nsdf.top/)
-
-> 注: 此功能在基于Jekyll的blog中为点击图片前往链接;在基于Heox+NexT的blog中,为点击图片下方链接跳转.  !!!待修改
-
-
-#### 5. 在新标签中打开连接
-```
-[nsdf.top](http://nsdf.top/){:target="_blank"}
-```
-[nsdf.top](http://nsdf.top/){:target="_blank"}
-
-> 注: 在之前使用的基于Jekyll的Blog中,这个功能可用且需要. 在当前基于Heox+NexT的blog中,不需要这样写.

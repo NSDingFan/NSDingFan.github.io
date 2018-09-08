@@ -4,6 +4,10 @@
     <title><![CDATA[会对"本地搜索"功能出现影响的文本内容]]></title>
     <url>%2F2018%2F09%2F08%2Fsick-file%2F</url>
     <content type="text"><![CDATA[Error 更新文章后, 搜索功能一直卡在加载状态, 切换到 nsdf.top/search.xml 页面,发现有以上错误提示. 问题语句: 有问题的语句: 点击图片可以下载这个文件 没问题的语句: 在打开一个新的项目文件夹时 就需要重新配置 launch.json 中的 cwd 参数 分析:问题在于空格, 在有问题文本中,存在着编码错误的空格,如果你尝试删除这些空格,会发现在有两处空格位置需要删除两次才会消失, 这两个位置就是问题产生的原因. 解决方式 寻找一种可以重新将文本编码的方式 或者把有问题的文件改掉,参考: http://www.itfanr.cc/2017/11/24/resolve-hexo-blog-search-exception/ 使用Sublime或者vim,都可以很明显的看出问题在哪]]></content>
+      <tags>
+        <tag>hexo-local-search</tag>
+        <tag>blog 搭建</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[blog搭建踩坑指南]]></title>
@@ -11,9 +15,9 @@
     <content type="text"><![CDATA[看，前面有个坑。 ─=≡Σ(((つ•̀ω•́)つ))]]></content>
       <tags>
         <tag>hexo</tag>
-        <tag>blog</tag>
         <tag>git</tag>
         <tag>macOS</tag>
+        <tag>blog 搭建</tag>
       </tags>
   </entry>
   <entry>
@@ -21,11 +25,11 @@
     <url>%2F2018%2F09%2F03%2Fbest-time-to-buy-and-sell-stock-ii%2F</url>
     <content type="text"><![CDATA[题目链接 题目给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。 设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。 注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。 示例 1:1234输入: [7,1,5,3,6,4]输出: 7解释: 在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5-1 = 4 。 随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6-3 = 3 。 示例 2:12345输入: [1,2,3,4,5]输出: 4解释: 在第 1 天（股票价格 = 1）的时候买入，在第 5 天 （股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5-1 = 4 。 注意你不能在第 1 天和第 2 天接连购买股票，之后再将它们卖出。 因为这样属于同时参与了多笔交易，你必须在再次购买前出售掉之前的股票。 示例 3:123输入: [7,6,4,3,1]输出: 0解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。 解答分析从题目中分析，要求只能保留一只股票，并且尽可能完成多的交易。 于是我开始尝试从从第一个低于第二天价格的位置买入，然后在第一个高于此价格的位置卖出，然后再从下一个低于后续价格的位置买入，然后在最近的高于此价格位置卖出。经过计算，我发现按照这种方式，所有的买入和卖出操作都是发生在相邻元素的，也就是列表的 i和i+1位置。并且在计算了实例的三个用例后，结果符合预期。同时，这也符合 贪心算法 的思路。 进而得出结论，只要计算列表中所有相邻元素的差值，最大收益即为所有差值大于0的结果的和。 从列表长度方面分析，当列表为空，或者只有一个元素的时候，不满足买入卖出条件，所以可以在计算时先行排除。 方式一123456789101112131415161718192021class Solution1: """ 首先判断 prices长度是否小于2, 然后循环结算列表 i+1 与 i 的差, 并将大于0的结果累加。 最后返回累加结果,即为最大收益 """ def maxProfit(self, prices): """ :type prices: List[int] :rtype: int """ max_profit = 0 if len(prices) &lt; 2: return max_profit for i in range(len(prices) - 1): profit = prices[i + 1] - prices[i] if profit &gt; 0: max_profit += profit return max_profit 时间复杂度：O(N) ， 空间复杂度： O(1) 方式二只是写了一个列表解析^jiexi，一行完成。 实际性能不如方式一。 123456789101112class Solution2:"""解题思路与方式一相同，列表 i+1 与 i 元素相减，并将大于0的结果相加。只是改用了列表解析的方式，来写成一行。 """ def maxProfit(self, prices): """ :type prices: List[int] :rtype: int """ return int((sum(list((prices[i + 1] - prices[i]) + abs(prices[i + 1] - prices[i])for i in range(len(prices) - 1)))) / 2) 时间复杂度：O(N)，空间复杂度：O(N) 思考由于是刚开始接触算法题，最开始看到这道题的时候有些摸不着头脑。不知道从哪里入手，比如怎么找出差值最大的和，是先判断间隔为1的差值，在判断间隔为2的差值…但是沉下心来，在纸上进行一些尝试后，找出适用于用例的计算方式，很快就找到了这个规律，直接找出相邻的差值即可。然后写成代码进行验证，符合预期。]]></content>
       <tags>
-        <tag>Python</tag>
         <tag>LeetCode</tag>
         <tag>贪心算法</tag>
         <tag>列表</tag>
         <tag>列表解析</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -33,9 +37,9 @@
     <url>%2F2018%2F09%2F03%2Fcontains-duplicte-ii%2F</url>
     <content type="text"><![CDATA[题目链接 题目给定一个整数数组和一个整数 k，判断数组中是否存在两个不同的索引 i 和 j，使得 nums [i] = nums [j]，并且 i 和 j 的差的绝对值最大为 k。 示例 1: 12输入: nums = [1,2,3,1], k = 3输出: true 示例 2: 12输入: nums = [1,0,1,1], k = 1输出: true 示例 3: 12输入: nums = [1,2,3,1,2,3], k = 2输出: false 解决方案思路这道题，可以直接使用一个长度为k的哈希表即可解决问题。哈希表中只会保存不重复的内容，所以通过循环，按顺序每次向哈希表中添加一个列表元素，判断哈希表长度是否增长：如果增长，就将最早加入哈希表的元素删除，以保持哈希表长度位k；如果长度不变，即找到了列表中满足重复且索引差的绝对值最大为k的元素，题目结束。 这就相当与在一条数字组成的轨道上放置的一个长度为k的方框，只要判断框框范围内是否有重复即可，而不需要从一开始就找到所有重复元素。 此外，还可以在程序开头，先行判断： 列表是否存在重复 列表长度是否超过k 补充：这道题也可以使用字典来实现类似哈希表的操作，用key存nums[i]的值,value 存 nums[i]的索引。每当发现重复元素时（if xx in dic），判断字典中对应key的 value值是与当前元素的索引值的差，如果符合!&gt;k 这个条件，即找到结果，反之则更新字典中key的value值。 方法一：通过set来解决问题 1234567891011121314151617181920212223242526272829303132class Solution: """ 给定一个整数数组和一个整数 k，判断数组中是否存在两个不同的索引 i 和 j，使得 nums [i] = nums [j]，并且 i 和 j 的差的绝对值最大为 k。 """ # 需要使用 haseSet来解决问题 def containsNearbyDuplicate(self, nums, k): """ :type nums: List[int] :type k: int :rtype bool 使用hash set 来判断 k长度的窗口中有无重复的数字 """ # 判断nums为空的情况 if not nums: return False # 判断nums长度小于k的情况 if len(nums) &lt;= k: return len(nums) &gt; len(set(nums)) # 判断读取的前k个元素有无重复 hashset = set(nums[:k]) if len(hashset) &lt; k: return True # 循环判断,每次按顺序添加一个元素到set中,判断长度.如果为k,证明新加入的元素与set中的存在重复,条件成立. # 否则,就将set中最早加入的元素去掉, 由于set()后会改变原nums顺序,所以需要使用remove方法,按照添加顺序去除. 即nums[i-k] for i in range(k, len(nums)): hashset.add(nums[i]) if len(hashset) == k: return True else: hashset.remove(nums[i - k]) # 这里相当于去掉了nums的第一个元素,依次类推 return False 时间复杂度：O(N), 空间复杂度 O(1) beat 98.67 % 的 python3 方法二：通过使用字典来解决问题,用key存nums[i]的值,value寸nums[i]的索引 1234567891011121314151617class Solution: def containsNearbyDuplicate(self, nums, k): """ :type nums: List[int] :type k: int :rtype: bool """ #利用字典存储数据，以便查询，key为数字，value为对应索引 dic = &#123;&#125; for index, value in enumerate(nums): if value in dic and index - dic[value] &lt;= k: return True else: dic[value] = index # Q: 如果发现重复的数字但是不满足k的条件,如何处理 # A: dic使用value作为key,所以只会保留一个数字最新的索引,不满足条件就会被覆盖 return False 时间复杂度：O(N), 空间复杂度 O(N) 思考：看到这道题时，首先想到的思路是分步进行操作： 判断列表是否存在重复元素 找出重复的元素，并返回set()后的结果 找出每个重复元素在列表中的所有位置的索引 判断这些索引之间的差，是否存在 不超过k的结果。我按照这个思路分块写出了代码后，逻辑没有任何问题，但是用时超出时间限制。 经过分析和梳理，发现自己把简单问题复杂化了，上面使用的这个set(),就可以直接解决问题。 在练习算法题的时候，如果自己安装逻辑方式的解法不满足题目要求，尝试多动手在本子上画一画，或者说进行一些空间想象，可能会找出更好的方案。例如这道题，其实就像一个数组轨道上加一个长度为k的方框这样的东西。不需要考虑方框外的情况，只要确认方框内的数组满足条件即可。 最开始，想的很复杂的解决方式：]]></content>
       <tags>
-        <tag>Python</tag>
         <tag>LeetCode</tag>
         <tag>列表</tag>
+        <tag>Python</tag>
         <tag>哈希表</tag>
         <tag>字典</tag>
       </tags>
@@ -53,6 +57,16 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[一些值得推荐的内容]]></title>
+    <url>%2F2018%2F08%2F18%2F%E4%B8%80%E4%BA%9B%E6%8E%A8%E8%8D%90%E7%9A%84%E6%96%87%E7%AB%A0%2F</url>
+    <content type="text"><![CDATA[macOS ibuick - macOS 与 external GPU (eGPU) 非常详细的关于 macOS 下 外置显卡 (eGPU) 的设置，使用以及注意事项 的文章。]]></content>
+      <tags>
+        <tag>macOS</tag>
+        <tag>推荐</tag>
+        <tag>egpu</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法]]></title>
     <url>%2F2018%2F08%2F18%2Fvscod-python-filenotefounder%2F</url>
     <content type="text"><![CDATA[问题在vscode中使用Python,通过建立一个Python程序读取同一子目录下的txt文件, 并打印其内容. 预期结果程序读取同一个子目录中的 content.txt 文件, 然后打印其内容:12stay hungrystay foolish 实际结果通过debug, 提示如下错误:1FileNotFoundError: [Errno 2] No such file or directory: &apos;content.txt&apos; 错误分析vscode在进行debug时,使用的路径并不是当前python文件所在的目录,而是固定为项目文件夹的根目录.所以当程序试图从根目录寻找此文件时,自然会报错.于是我进一步尝试将文本文件移动至项目的根目录,错误消失.所以,解决问题的关键就是修改vscode在进行debug时使用的目录,使其自动的指向当前python文件所在目录. 解决方案初步思路是通过在 VSCode 的 Setting 中或者 debug 的配置文件中进行配置，来解决这个问题。通过 Google 后，我在 StackOverflow 上找到了具体解决方案。 参考链接: Stack Overflow - VSCode — how to set working directory for debug Stack Overflow - vscode working directory when debugging python 解决方式点击vscode侧边的调试按钮,在出现的侧栏顶端找到设置按钮(图中齿轮图标), 点击打开 launch.json 文件, 在文件中找到当前所用调试的方式, 添加cwd配置 &quot;cwd&quot;: &quot;&quot;. (我这里使用的是 Python: Terminal (integrated)) 添加完成后, 在此debug程序, 发现错误消失. 补充每次打开一个新的项目文件夹时, 都需要重新在launch.json文件中重新配置参数.]]></content>
@@ -61,16 +75,6 @@
         <tag>FileNotFoundError</tag>
         <tag>cwd</tag>
         <tag>VSCode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[一些值得推荐的内容]]></title>
-    <url>%2F2018%2F08%2F18%2F%E4%B8%80%E4%BA%9B%E6%8E%A8%E8%8D%90%E7%9A%84%E6%96%87%E7%AB%A0%2F</url>
-    <content type="text"><![CDATA[macOS ibuick - macOS 与 external GPU (eGPU) 非常详细的关于 macOS 下 外置显卡 (eGPU) 的设置，使用以及注意事项 的文章。]]></content>
-      <tags>
-        <tag>macOS</tag>
-        <tag>推荐</tag>
-        <tag>egpu</tag>
       </tags>
   </entry>
   <entry>

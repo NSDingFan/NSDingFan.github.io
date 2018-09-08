@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-08T18:42:55.442Z</updated>
+  <updated>2018-09-08T20:33:38.831Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>配合使用MWeb进行Blog编写</title>
+    <link href="http://yoursite.com/2018/09/09/%E4%BD%BF%E7%94%A8MWeb%E9%85%8D%E5%90%88Hexo%E8%BF%9B%E8%A1%8CBlog%E7%BC%96%E5%86%99/"/>
+    <id>http://yoursite.com/2018/09/09/使用MWeb配合Hexo进行Blog编写/</id>
+    <published>2018-09-08T20:10:07.000Z</published>
+    <updated>2018-09-08T20:33:38.831Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;目前用来作为功能测试，以后会进行归纳总结&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h1&gt;&lt;h2 id=&quot;插入图片设置&quot;&gt;&lt;a href=&quot;#插入图片设置&quot; class=&quot;headerlink&quot; title=&quot;插入图片设置&quot;&gt;&lt;/a&gt;插入图片设置&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/post/sanpo-69306134.jpg&quot; alt=&quot;sanpo-69306134-c&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="基于 Heox + NexT 的 blog 搭建" scheme="http://yoursite.com/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="blog 搭建" scheme="http://yoursite.com/tags/blog-%E6%90%AD%E5%BB%BA/"/>
+    
+      <category term="MWeb" scheme="http://yoursite.com/tags/MWeb/"/>
+    
+  </entry>
+  
+  <entry>
     <title>会对&quot;本地搜索&quot;功能出现影响的文本内容</title>
     <link href="http://yoursite.com/2018/09/08/sick-file/"/>
     <id>http://yoursite.com/2018/09/08/sick-file/</id>
     <published>2018-09-08T13:28:34.000Z</published>
-    <updated>2018-09-08T18:42:55.442Z</updated>
+    <updated>2018-09-08T20:07:38.088Z</updated>
     
     <summary type="html">
     
@@ -29,6 +54,8 @@
 &lt;p&gt;更新文章后, 搜索功能一直卡在加载状态, 切换到 &lt;code&gt;nsdf.top/search.xml&lt;/code&gt; 页面,发现有以上错误提示.&lt;/p&gt;
     
     </summary>
+    
+      <category term="基于 Heox + NexT 的 blog 搭建" scheme="http://yoursite.com/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
     
     
       <category term="hexo-local-search" scheme="http://yoursite.com/tags/hexo-local-search/"/>
@@ -42,7 +69,7 @@
     <link href="http://yoursite.com/2018/09/07/blog%E6%90%AD%E5%BB%BA%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/"/>
     <id>http://yoursite.com/2018/09/07/blog搭建踩坑指南/</id>
     <published>2018-09-06T19:36:24.000Z</published>
-    <updated>2018-09-08T18:43:00.589Z</updated>
+    <updated>2018-09-08T19:33:11.896Z</updated>
     
     <summary type="html">
     
@@ -56,6 +83,8 @@
       
     
     </summary>
+    
+      <category term="基于 Heox + NexT 的 blog 搭建" scheme="http://yoursite.com/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
     
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
@@ -73,7 +102,7 @@
     <link href="http://yoursite.com/2018/09/03/best-time-to-buy-and-sell-stock-ii/"/>
     <id>http://yoursite.com/2018/09/03/best-time-to-buy-and-sell-stock-ii/</id>
     <published>2018-09-02T18:35:15.656Z</published>
-    <updated>2018-09-08T18:43:14.786Z</updated>
+    <updated>2018-09-08T21:02:08.380Z</updated>
     
     <summary type="html">
     
@@ -86,6 +115,8 @@
 &lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;输入: [7,1,5,3,6,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输出: 7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;解释: 在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5-1 = 4 。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6-3 = 3 。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
     
     </summary>
+    
+      <category term="LeetCode" scheme="http://yoursite.com/categories/LeetCode/"/>
     
     
       <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
@@ -105,7 +136,7 @@
     <link href="http://yoursite.com/2018/09/03/contains-duplicte-ii/"/>
     <id>http://yoursite.com/2018/09/03/contains-duplicte-ii/</id>
     <published>2018-09-02T18:33:33.258Z</published>
-    <updated>2018-09-07T20:16:14.299Z</updated>
+    <updated>2018-09-08T19:33:47.781Z</updated>
     
     <summary type="html">
     
@@ -117,6 +148,8 @@
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;输入: nums = [1,2,3,1], k = 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输出: true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
+    
+      <category term="LeetCode" scheme="http://yoursite.com/categories/LeetCode/"/>
     
     
       <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
@@ -136,7 +169,7 @@
     <link href="http://yoursite.com/2018/08/26/%E9%80%9A%E8%BF%87markdown%E7%BC%96%E5%86%99blog%E8%BF%9B%E9%98%B6%E6%8A%80%E5%B7%A7/"/>
     <id>http://yoursite.com/2018/08/26/通过markdown编写blog进阶技巧/</id>
     <published>2018-08-26T06:29:15.499Z</published>
-    <updated>2018-09-08T18:43:47.213Z</updated>
+    <updated>2018-09-08T19:43:42.003Z</updated>
     
     <summary type="html">
     
@@ -148,8 +181,8 @@
     
     </summary>
     
+      <category term="基于 Heox + NexT 的 blog 搭建" scheme="http://yoursite.com/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
     
-      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
     
       <category term="iframe" scheme="http://yoursite.com/tags/iframe/"/>
     
@@ -159,6 +192,8 @@
     
       <category term="blog技巧" scheme="http://yoursite.com/tags/blog%E6%8A%80%E5%B7%A7/"/>
     
+      <category term="MarkDown" scheme="http://yoursite.com/tags/MarkDown/"/>
+    
   </entry>
   
   <entry>
@@ -166,7 +201,7 @@
     <link href="http://yoursite.com/2018/08/18/%E4%B8%80%E4%BA%9B%E6%8E%A8%E8%8D%90%E7%9A%84%E6%96%87%E7%AB%A0/"/>
     <id>http://yoursite.com/2018/08/18/一些推荐的文章/</id>
     <published>2018-08-17T16:00:00.000Z</published>
-    <updated>2018-09-07T20:18:09.985Z</updated>
+    <updated>2018-09-08T19:40:49.007Z</updated>
     
     <summary type="html">
     
@@ -195,7 +230,7 @@
     <link href="http://yoursite.com/2018/08/18/vscod-python-filenotefounder/"/>
     <id>http://yoursite.com/2018/08/18/vscod-python-filenotefounder/</id>
     <published>2018-08-17T16:00:00.000Z</published>
-    <updated>2018-09-08T13:26:35.003Z</updated>
+    <updated>2018-09-08T19:43:58.670Z</updated>
     
     <summary type="html">
     
@@ -204,6 +239,8 @@
 &lt;h2 id=&quot;实际结果&quot;&gt;&lt;a href=&quot;#实际结果&quot; class=&quot;headerlink&quot; title=&quot;实际结果&quot;&gt;&lt;/a&gt;实际结果&lt;/h2&gt;&lt;p&gt;通过debug, 提示如下错误:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;FileNotFoundError: [Errno 2] No such file or directory: &amp;apos;content.txt&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
     
     </summary>
+    
+      <category term="Visual Studio Code" scheme="http://yoursite.com/categories/Visual-Studio-Code/"/>
     
     
       <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
@@ -217,11 +254,11 @@
   </entry>
   
   <entry>
-    <title>Mac 上使用 Visual Studio Code 进行Python开发</title>
+    <title>Mac 上使用 Visual Studio Code 进行 Python 开发</title>
     <link href="http://yoursite.com/2018/08/12/mac%E4%B8%8A%E4%BD%BF%E7%94%A8vscode%E8%BF%9B%E8%A1%8Cpython%E5%BC%80%E5%8F%91/"/>
     <id>http://yoursite.com/2018/08/12/mac上使用vscode进行python开发/</id>
     <published>2018-08-11T16:00:00.000Z</published>
-    <updated>2018-09-08T09:07:48.546Z</updated>
+    <updated>2018-09-08T19:45:55.750Z</updated>
     
     <summary type="html">
     
@@ -238,16 +275,18 @@
     
     </summary>
     
+      <category term="Visual Studio Code" scheme="http://yoursite.com/categories/Visual-Studio-Code/"/>
+    
     
       <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
-    
-      <category term="VS Codo" scheme="http://yoursite.com/tags/VS-Codo/"/>
-    
-      <category term="配置" scheme="http://yoursite.com/tags/%E9%85%8D%E7%BD%AE/"/>
     
       <category term="yapf" scheme="http://yoursite.com/tags/yapf/"/>
     
       <category term="flake8" scheme="http://yoursite.com/tags/flake8/"/>
+    
+      <category term="Visual Studio Code" scheme="http://yoursite.com/tags/Visual-Studio-Code/"/>
+    
+      <category term="Python安装&amp;配置" scheme="http://yoursite.com/tags/Python%E5%AE%89%E8%A3%85-%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
@@ -256,7 +295,7 @@
     <link href="http://yoursite.com/2018/07/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2018/07/24/我的第一篇博客/</id>
     <published>2018-07-23T16:00:00.000Z</published>
-    <updated>2018-09-08T18:43:33.784Z</updated>
+    <updated>2018-09-08T19:42:37.590Z</updated>
     
     <summary type="html">
     
@@ -269,6 +308,8 @@
       
     
     </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
       <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>

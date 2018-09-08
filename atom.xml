@@ -58,9 +58,9 @@
       <category term="基于 Heox + NexT 的 blog 搭建" scheme="http://yoursite.com/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="hexo-local-search" scheme="http://yoursite.com/tags/hexo-local-search/"/>
-    
       <category term="blog 搭建" scheme="http://yoursite.com/tags/blog-%E6%90%AD%E5%BB%BA/"/>
+    
+      <category term="hexo-local-search" scheme="http://yoursite.com/tags/hexo-local-search/"/>
     
   </entry>
   
@@ -89,11 +89,11 @@
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
+      <category term="blog 搭建" scheme="http://yoursite.com/tags/blog-%E6%90%AD%E5%BB%BA/"/>
+    
       <category term="git" scheme="http://yoursite.com/tags/git/"/>
     
       <category term="macOS" scheme="http://yoursite.com/tags/macOS/"/>
-    
-      <category term="blog 搭建" scheme="http://yoursite.com/tags/blog-%E6%90%AD%E5%BB%BA/"/>
     
   </entry>
   
@@ -184,6 +184,8 @@
       <category term="基于 Heox + NexT 的 blog 搭建" scheme="http://yoursite.com/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
     
     
+      <category term="MarkDown" scheme="http://yoursite.com/tags/MarkDown/"/>
+    
       <category term="iframe" scheme="http://yoursite.com/tags/iframe/"/>
     
       <category term="链接跳转" scheme="http://yoursite.com/tags/%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC/"/>
@@ -192,7 +194,33 @@
     
       <category term="blog技巧" scheme="http://yoursite.com/tags/blog%E6%8A%80%E5%B7%A7/"/>
     
-      <category term="MarkDown" scheme="http://yoursite.com/tags/MarkDown/"/>
+  </entry>
+  
+  <entry>
+    <title>VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法</title>
+    <link href="http://yoursite.com/2018/08/18/vscod-python-filenotefounder/"/>
+    <id>http://yoursite.com/2018/08/18/vscod-python-filenotefounder/</id>
+    <published>2018-08-17T16:00:00.000Z</published>
+    <updated>2018-09-08T19:43:58.670Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h1&gt;&lt;p&gt;在vscode中使用Python,通过建立一个Python程序读取同一子目录下的txt文件, 并打印其内容.&lt;/p&gt;
+&lt;h2 id=&quot;预期结果&quot;&gt;&lt;a href=&quot;#预期结果&quot; class=&quot;headerlink&quot; title=&quot;预期结果&quot;&gt;&lt;/a&gt;预期结果&lt;/h2&gt;&lt;p&gt;程序读取同一个子目录中的 &lt;code&gt;content.txt&lt;/code&gt; 文件, 然后打印其内容:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;stay hungry&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;stay foolish&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;实际结果&quot;&gt;&lt;a href=&quot;#实际结果&quot; class=&quot;headerlink&quot; title=&quot;实际结果&quot;&gt;&lt;/a&gt;实际结果&lt;/h2&gt;&lt;p&gt;通过debug, 提示如下错误:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;FileNotFoundError: [Errno 2] No such file or directory: &amp;apos;content.txt&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Visual Studio Code" scheme="http://yoursite.com/categories/Visual-Studio-Code/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+      <category term="FileNotFoundError" scheme="http://yoursite.com/tags/FileNotFoundError/"/>
+    
+      <category term="cwd" scheme="http://yoursite.com/tags/cwd/"/>
+    
+      <category term="VSCode" scheme="http://yoursite.com/tags/VSCode/"/>
     
   </entry>
   
@@ -226,34 +254,6 @@
   </entry>
   
   <entry>
-    <title>VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法</title>
-    <link href="http://yoursite.com/2018/08/18/vscod-python-filenotefounder/"/>
-    <id>http://yoursite.com/2018/08/18/vscod-python-filenotefounder/</id>
-    <published>2018-08-17T16:00:00.000Z</published>
-    <updated>2018-09-08T19:43:58.670Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h1&gt;&lt;p&gt;在vscode中使用Python,通过建立一个Python程序读取同一子目录下的txt文件, 并打印其内容.&lt;/p&gt;
-&lt;h2 id=&quot;预期结果&quot;&gt;&lt;a href=&quot;#预期结果&quot; class=&quot;headerlink&quot; title=&quot;预期结果&quot;&gt;&lt;/a&gt;预期结果&lt;/h2&gt;&lt;p&gt;程序读取同一个子目录中的 &lt;code&gt;content.txt&lt;/code&gt; 文件, 然后打印其内容:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;stay hungry&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;stay foolish&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h2 id=&quot;实际结果&quot;&gt;&lt;a href=&quot;#实际结果&quot; class=&quot;headerlink&quot; title=&quot;实际结果&quot;&gt;&lt;/a&gt;实际结果&lt;/h2&gt;&lt;p&gt;通过debug, 提示如下错误:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;FileNotFoundError: [Errno 2] No such file or directory: &amp;apos;content.txt&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Visual Studio Code" scheme="http://yoursite.com/categories/Visual-Studio-Code/"/>
-    
-    
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
-    
-      <category term="FileNotFoundError" scheme="http://yoursite.com/tags/FileNotFoundError/"/>
-    
-      <category term="cwd" scheme="http://yoursite.com/tags/cwd/"/>
-    
-      <category term="VSCode" scheme="http://yoursite.com/tags/VSCode/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Mac 上使用 Visual Studio Code 进行 Python 开发</title>
     <link href="http://yoursite.com/2018/08/12/mac%E4%B8%8A%E4%BD%BF%E7%94%A8vscode%E8%BF%9B%E8%A1%8Cpython%E5%BC%80%E5%8F%91/"/>
     <id>http://yoursite.com/2018/08/12/mac上使用vscode进行python开发/</id>
@@ -280,13 +280,13 @@
     
       <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
     
-      <category term="yapf" scheme="http://yoursite.com/tags/yapf/"/>
-    
-      <category term="flake8" scheme="http://yoursite.com/tags/flake8/"/>
-    
       <category term="Visual Studio Code" scheme="http://yoursite.com/tags/Visual-Studio-Code/"/>
     
       <category term="Python安装&amp;配置" scheme="http://yoursite.com/tags/Python%E5%AE%89%E8%A3%85-%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="yapf" scheme="http://yoursite.com/tags/yapf/"/>
+    
+      <category term="flake8" scheme="http://yoursite.com/tags/flake8/"/>
     
   </entry>
   

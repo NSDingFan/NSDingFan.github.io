@@ -152,6 +152,15 @@
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122648300-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122648300-1');
+</script>
+
 
 
 
@@ -641,6 +650,9 @@
           
 
   
+    <div id="gitalk-container">
+    </div>
+  
 
 
 
@@ -1070,6 +1082,22 @@
 
 
 
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: 'c257b951cc89084f18eb',
+          clientSecret: '6b71062468c6ac38a27e4270b16b0b37ac892113',
+          repo: 'nsdingfan.gtihub.io',
+          owner: 'NSDingFan',
+          admin: ['NSDingFan'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+    </script>
 
 
   

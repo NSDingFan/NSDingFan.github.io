@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[配合使用MWeb进行Blog编写]]></title>
     <url>%2F2018%2F09%2F09%2F%E4%BD%BF%E7%94%A8MWeb%E9%85%8D%E5%90%88Hexo%E8%BF%9B%E8%A1%8CBlog%E7%BC%96%E5%86%99%2F</url>
-    <content type="text"><![CDATA[目前用来作为功能测试，以后会进行归纳总结 测试插入图片设置 路径设定为 images/post绝对路径（这个绝对与相对是基于引入文件夹的，如果引入的是存储Blog资源的文件夹(像我目前这样)，就设定为 绝对路径；如果引入的是整个Blog项目(例如 NSDingFan.github.io), 就使用相对路径）]]></content>
+    <content type="text"><![CDATA[目前用来作为功能测试，以后会进行归纳总结 测试更新1 插入图片设置 路径设定为 images/post绝对路径（这个绝对与相对是基于引入文件夹的，如果引入的是存储Blog资源的文件夹(像我目前这样)，就设定为 绝对路径；如果引入的是整个Blog项目(例如 NSDingFan.github.io), 就使用相对路径）]]></content>
       <categories>
         <category>基于 Heox + NexT 的 blog 搭建</category>
       </categories>

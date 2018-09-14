@@ -1101,7 +1101,7 @@
         repo: 'NSDingFan.github.io',
         owner: '',
         admin: ['NSDingFan'],
-        id: location.pathname,
+        id: decodeURIComponent(location.pathname),
         labels: 'gitalk'.split(',').filter(l => l),
         perPage: 15,
         pagerDirection: 'last',

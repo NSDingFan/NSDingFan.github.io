@@ -1,7 +1,9 @@
 ---
 title:      VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法
-subtitle:   通过配置cwd参数，解决在VSCode中使用Python读取同一子目录中的txt文件时异常报错 FileNotFoundError 的问题
+# subtitle:   通过配置cwd参数，解决在VSCode中使用Python读取同一子目录中的txt文件时异常报错 FileNotFoundError 的问题
 date:       2018-08-18
+categories:
+    - Visual Studio Code
 tags:
     - Python
     - FileNotFoundError

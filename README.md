@@ -53,3 +53,30 @@ My personal blog with Hexo &amp; NexT
 - 02:56:01 完成了主题的一些自定义,将之前blog中文章迁移至新blog
 - 21:55:06 解决搜索功能出现问题: 一篇文章中部分内容编码存在问题
     - 有待进一步改进代码或者文档编写的流程
+    - 可以考虑加入搜索框 https://liam0205.me/2017/09/21/local-search-engine-in-Hexo-site/
+
+- 01:31:39 优化blog
+    - [自动化无损缩图](https://njafei.github.io/2017/09/26/ImageOptm/)
+
+- 02:54:58 添加RSS
+
+# 2018年09月09日
+
+- 23:55:34 添加Gitalk评论插件,尝试将之前Jekyll的插件转移到Gitalk使用
+
+# 2018年09月11日
+
+- 22:42:41 文章置顶功能,参考:https://www.ly554.com/nextmh.html
+    ```
+    node_modules/hexo-generator-index/lib/generator.js
+    ```
+    通过在文章前使用top:100 这样的标签,实现控制置顶优先级, 数值越大排位越前
+
+- 23:28:39 添加live 2d
+
+# 2018年09月12日
+
+- 21:56:22 live2d 无法设定尺寸,无法设置手机开启问题, 将配置信息放到blog的配置信息中,不要放在主题配置信息中.
+
+- 2018年09月12日22:42:09 调整canvas动画
+ 路径: /Users/DF/Documents/GitHub/NSDingFan.github.io/themes/next/source/lib/canvas-nest/canvas-nest.min.js

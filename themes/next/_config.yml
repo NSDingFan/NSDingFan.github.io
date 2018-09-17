@@ -161,7 +161,7 @@ social:
   GitHub: https://github.com/NSDingFan || github
   E-Mail: mailto:df_works@163.com || envelope
   微博: http://weibo.com/u/6590783493 || weibo
-  知乎: http://www.zhihu.com/people/ding-fan-7-27 || zhihu
+  知乎: http://www.zhihu.com/people/ding-fan-7-27
   简书: https://www.jianshu.com/u/272faf29687d || book
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -339,7 +339,7 @@ related_posts:
 
 # Declare license on posts
 post_copyright:
-  enable: false
+  enable: true
   license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a>
 
 # Post edit
@@ -455,6 +455,22 @@ font:
 # Third Party Services Settings
 # ---------------------------------------------------------------
 
+# Gitalk -- DF
+# gitalk:
+#   enable: true
+#   ClientID: e677567f95b525a7445e
+#   ClientSecret: eca03bf1d6e9b4411c3a289d829333df0ec84e4e
+#   repo: my-gitalk
+#   owner: NSDingFan
+#   adminUser: NSDingFan
+#   ID: location.pathname
+#   labels: 
+#     - gitalk
+#   perPage: 15
+#   pagerDirection: last
+#   createIssueManually: true
+#   distractionFreeMode: false
+
 # Math Equations Render Support
 math:
   enable: false
@@ -505,8 +521,8 @@ pangu: false
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: nsdingfan
   count: true
   lazyload: false
 
@@ -556,7 +572,7 @@ gitment:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-#baidushare:
+# baidushare:
 ##  type: button
 
 # addthis Share, see: https://www.addthis.com/
@@ -574,28 +590,28 @@ gitment:
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: false
+  enable: true
   postbottom:
-    enable: false
+    enable: true
     options:
       iconStyle: box
       boxForm: horizontal
       position: bottomCenter
-      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
+      networks: Weibo,Wechat,Douban,Twitter,Facebook
   float:
     enable: false
     options:
       iconStyle: box
       boxForm: horizontal
       position: middleRight
-      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
+      networks: Weibo,Wechat,Douban,Twitter,Facebook
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
 #google_site_verification:
 
 # Google Analytics
-#google_analytics:
+google_analytics: 'UA-122648300-1'
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
@@ -678,7 +694,7 @@ firestore:
 # Show Views/Visitors of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
-  enable: false
+  enable: true
   total_visitors: true
   total_visitors_icon: user
   total_views: true
@@ -790,6 +806,30 @@ reading_progress:
   color: "#37c6c0"
   height: 2px
 
+# # DF live2d
+# live2d:
+#   enable: true
+#   # enable: false
+#   scriptFrom: local # 默认
+#   pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
+#   pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
+#   pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+#   tagMode: false  # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中 ??? 这个什么一次
+#   log: false # 调试, 是否在控制台输出日志
+#   model:
+#     use: live2d-widget-model-shizuku # npm-module package name
+#     # use: wanko # 博客根目录/live2d_models/ 下的目录名
+#     # use: ./wives/wanko # 相对于博客根目录的路径
+#     # use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
+#   display:
+#     position: right
+#     width: 75
+#     height: 150
+#     # width: 150
+#     # height: 300
+#   mobile:
+#     show: false
+
 
 #! ---------------------------------------------------------------
 #! DO NOT EDIT THE FOLLOWING SETTINGS
@@ -830,6 +870,7 @@ fastclick: false
 lazyload: false
 
 # Progress bar in the top during page loading.
+# DF: 博客顶部加载条
 # Dependencies: https://github.com/theme-next/theme-next-pace
 pace: false
 # Themes list:
@@ -848,12 +889,14 @@ pace: false
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-minimal
+pace_theme: pace-theme-center-circle
+
 
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
-canvas_nest: true
-# canvas_nest: false
+# canvas_nest: true
+canvas_nest: false
+# 这里有个问题: 在mac下开启的话,cpu占用率一下就飙的很高,风扇狂转.
 
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
@@ -871,7 +914,7 @@ canvas_sphere: false
 # alpha: The transparency of the ribbon.
 # zIndex: The display level of the ribbon.
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 300
   alpha: 0.6
   zIndex: -1

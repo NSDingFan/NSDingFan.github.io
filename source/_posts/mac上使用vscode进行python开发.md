@@ -1,12 +1,14 @@
 ---
-title:      Mac 上使用 Visual Studio Code 进行Python开发
-subtitle:   Python 安装&配置 - VSC 设置
+title:      Mac 上使用 Visual Studio Code 进行 Python 开发
+# subtitle:   Python 安装&配置 - VSC 设置
 date:       2018-08-12
 author:     DF
+categories:
+    - Visual Studio Code
 tags:
     - Python
-    - VS Codo
-    - 配置
+    - Visual Studio Code
+    - Python安装&配置
     - yapf
     - flake8
 ---

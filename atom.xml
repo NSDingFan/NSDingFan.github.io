@@ -5,9 +5,9 @@
   <subtitle>Stay Hungry. Stay Foolish.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://nsdf.top/"/>
   <updated>2018-09-12T11:19:10.107Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://nsdf.top/</id>
   
   <author>
     <name>DingFan</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>配合使用MWeb进行Blog编写</title>
-    <link href="http://yoursite.com/2018/09/09/%E4%BD%BF%E7%94%A8MWeb%E9%85%8D%E5%90%88Hexo%E8%BF%9B%E8%A1%8CBlog%E7%BC%96%E5%86%99/"/>
-    <id>http://yoursite.com/2018/09/09/使用MWeb配合Hexo进行Blog编写/</id>
+    <link href="https://nsdf.top/2018/09/09/%E4%BD%BF%E7%94%A8MWeb%E9%85%8D%E5%90%88Hexo%E8%BF%9B%E8%A1%8CBlog%E7%BC%96%E5%86%99/"/>
+    <id>https://nsdf.top/2018/09/09/使用MWeb配合Hexo进行Blog编写/</id>
     <published>2018-09-08T20:10:07.000Z</published>
     <updated>2018-09-12T11:19:10.107Z</updated>
     
@@ -33,19 +33,19 @@
     
     </summary>
     
-      <category term="基于 Heox + NexT 的 blog 搭建" scheme="http://yoursite.com/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
+      <category term="基于 Heox + NexT 的 blog 搭建" scheme="https://nsdf.top/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="blog 搭建" scheme="http://yoursite.com/tags/blog-%E6%90%AD%E5%BB%BA/"/>
+      <category term="blog 搭建" scheme="https://nsdf.top/tags/blog-%E6%90%AD%E5%BB%BA/"/>
     
-      <category term="MWeb" scheme="http://yoursite.com/tags/MWeb/"/>
+      <category term="MWeb" scheme="https://nsdf.top/tags/MWeb/"/>
     
   </entry>
   
   <entry>
     <title>会对&quot;本地搜索&quot;功能出现影响的文本内容</title>
-    <link href="http://yoursite.com/2018/09/08/sick-file/"/>
-    <id>http://yoursite.com/2018/09/08/sick-file/</id>
+    <link href="https://nsdf.top/2018/09/08/sick-file/"/>
+    <id>https://nsdf.top/2018/09/08/sick-file/</id>
     <published>2018-09-08T13:28:34.000Z</published>
     <updated>2018-09-08T20:07:38.088Z</updated>
     
@@ -56,19 +56,19 @@
     
     </summary>
     
-      <category term="基于 Heox + NexT 的 blog 搭建" scheme="http://yoursite.com/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
+      <category term="基于 Heox + NexT 的 blog 搭建" scheme="https://nsdf.top/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="blog 搭建" scheme="http://yoursite.com/tags/blog-%E6%90%AD%E5%BB%BA/"/>
+      <category term="blog 搭建" scheme="https://nsdf.top/tags/blog-%E6%90%AD%E5%BB%BA/"/>
     
-      <category term="hexo-local-search" scheme="http://yoursite.com/tags/hexo-local-search/"/>
+      <category term="hexo-local-search" scheme="https://nsdf.top/tags/hexo-local-search/"/>
     
   </entry>
   
   <entry>
     <title>blog搭建踩坑指南</title>
-    <link href="http://yoursite.com/2018/09/07/blog%E6%90%AD%E5%BB%BA%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/"/>
-    <id>http://yoursite.com/2018/09/07/blog搭建踩坑指南/</id>
+    <link href="https://nsdf.top/2018/09/07/blog%E6%90%AD%E5%BB%BA%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/"/>
+    <id>https://nsdf.top/2018/09/07/blog搭建踩坑指南/</id>
     <published>2018-09-06T19:36:24.000Z</published>
     <updated>2018-09-08T19:33:11.896Z</updated>
     
@@ -85,23 +85,23 @@
     
     </summary>
     
-      <category term="基于 Heox + NexT 的 blog 搭建" scheme="http://yoursite.com/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
+      <category term="基于 Heox + NexT 的 blog 搭建" scheme="https://nsdf.top/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://nsdf.top/tags/hexo/"/>
     
-      <category term="blog 搭建" scheme="http://yoursite.com/tags/blog-%E6%90%AD%E5%BB%BA/"/>
+      <category term="blog 搭建" scheme="https://nsdf.top/tags/blog-%E6%90%AD%E5%BB%BA/"/>
     
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+      <category term="git" scheme="https://nsdf.top/tags/git/"/>
     
-      <category term="macOS" scheme="http://yoursite.com/tags/macOS/"/>
+      <category term="macOS" scheme="https://nsdf.top/tags/macOS/"/>
     
   </entry>
   
   <entry>
     <title>LeetCode-122.买卖股票的最佳时机 II | Best Time to Buy and Sell Stock II</title>
-    <link href="http://yoursite.com/2018/09/03/best-time-to-buy-and-sell-stock-ii/"/>
-    <id>http://yoursite.com/2018/09/03/best-time-to-buy-and-sell-stock-ii/</id>
+    <link href="https://nsdf.top/2018/09/03/best-time-to-buy-and-sell-stock-ii/"/>
+    <id>https://nsdf.top/2018/09/03/best-time-to-buy-and-sell-stock-ii/</id>
     <published>2018-09-02T18:35:15.656Z</published>
     <updated>2018-09-09T06:00:59.331Z</updated>
     
@@ -117,25 +117,25 @@
     
     </summary>
     
-      <category term="LeetCode" scheme="http://yoursite.com/categories/LeetCode/"/>
+      <category term="LeetCode" scheme="https://nsdf.top/categories/LeetCode/"/>
     
     
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+      <category term="LeetCode" scheme="https://nsdf.top/tags/LeetCode/"/>
     
-      <category term="贪心算法" scheme="http://yoursite.com/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
+      <category term="Python" scheme="https://nsdf.top/tags/Python/"/>
     
-      <category term="列表" scheme="http://yoursite.com/tags/%E5%88%97%E8%A1%A8/"/>
+      <category term="贪心算法" scheme="https://nsdf.top/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
     
-      <category term="列表解析" scheme="http://yoursite.com/tags/%E5%88%97%E8%A1%A8%E8%A7%A3%E6%9E%90/"/>
+      <category term="列表" scheme="https://nsdf.top/tags/%E5%88%97%E8%A1%A8/"/>
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="列表解析" scheme="https://nsdf.top/tags/%E5%88%97%E8%A1%A8%E8%A7%A3%E6%9E%90/"/>
     
   </entry>
   
   <entry>
     <title>LeetCode-219.存在重复元素 II | Contains Duplicate II</title>
-    <link href="http://yoursite.com/2018/09/03/contains-duplicte-ii/"/>
-    <id>http://yoursite.com/2018/09/03/contains-duplicte-ii/</id>
+    <link href="https://nsdf.top/2018/09/03/contains-duplicte-ii/"/>
+    <id>https://nsdf.top/2018/09/03/contains-duplicte-ii/</id>
     <published>2018-09-02T18:33:33.258Z</published>
     <updated>2018-09-08T19:33:47.781Z</updated>
     
@@ -150,57 +150,57 @@
     
     </summary>
     
-      <category term="LeetCode" scheme="http://yoursite.com/categories/LeetCode/"/>
+      <category term="LeetCode" scheme="https://nsdf.top/categories/LeetCode/"/>
     
     
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+      <category term="LeetCode" scheme="https://nsdf.top/tags/LeetCode/"/>
     
-      <category term="列表" scheme="http://yoursite.com/tags/%E5%88%97%E8%A1%A8/"/>
+      <category term="Python" scheme="https://nsdf.top/tags/Python/"/>
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="列表" scheme="https://nsdf.top/tags/%E5%88%97%E8%A1%A8/"/>
     
-      <category term="哈希表" scheme="http://yoursite.com/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
+      <category term="哈希表" scheme="https://nsdf.top/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
     
-      <category term="字典" scheme="http://yoursite.com/tags/%E5%AD%97%E5%85%B8/"/>
+      <category term="字典" scheme="https://nsdf.top/tags/%E5%AD%97%E5%85%B8/"/>
     
   </entry>
   
   <entry>
     <title>通过MarkDown编写blog进阶技巧</title>
-    <link href="http://yoursite.com/2018/08/26/%E9%80%9A%E8%BF%87markdown%E7%BC%96%E5%86%99blog%E8%BF%9B%E9%98%B6%E6%8A%80%E5%B7%A7/"/>
-    <id>http://yoursite.com/2018/08/26/通过markdown编写blog进阶技巧/</id>
+    <link href="https://nsdf.top/2018/08/26/%E9%80%9A%E8%BF%87markdown%E7%BC%96%E5%86%99blog%E8%BF%9B%E9%98%B6%E6%8A%80%E5%B7%A7/"/>
+    <id>https://nsdf.top/2018/08/26/通过markdown编写blog进阶技巧/</id>
     <published>2018-08-26T06:29:15.499Z</published>
     <updated>2018-09-08T19:43:42.003Z</updated>
     
     <summary type="html">
     
       &lt;h2 id=&quot;在MarkDown中插入链接的一些技巧&quot;&gt;&lt;a href=&quot;#在MarkDown中插入链接的一些技巧&quot; class=&quot;headerlink&quot; title=&quot;在MarkDown中插入链接的一些技巧&quot;&gt;&lt;/a&gt;在MarkDown中插入链接的一些技巧&lt;/h2&gt;&lt;h4 id=&quot;1-直接添加链接&quot;&gt;&lt;a href=&quot;#1-直接添加链接&quot; class=&quot;headerlink&quot; title=&quot;1. 直接添加链接&quot;&gt;&lt;/a&gt;1. 直接添加链接&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;http://nsdf.top/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;a href=&quot;http://nsdf.top/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://nsdf.top/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://nsdf.top/&quot;&gt;http://nsdf.top/&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&quot;2-一般的链接&quot;&gt;&lt;a href=&quot;#2-一般的链接&quot; class=&quot;headerlink&quot; title=&quot;2. 一般的链接&quot;&gt;&lt;/a&gt;2. 一般的链接&lt;/h4&gt;&lt;figure class=&quot;highlight markdown&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;丁帆的blog： [&lt;span class=&quot;string&quot;&gt;nsdf.top&lt;/span&gt;](&lt;span class=&quot;link&quot;&gt;http://nsdf.top/&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;丁帆的blog： [&lt;span class=&quot;string&quot;&gt;nsdf.top&lt;/span&gt;](&lt;span class=&quot;link&quot;&gt;http://nsdf.top/ &quot;丁帆的博客&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;丁帆的blog： &lt;a href=&quot;http://nsdf.top/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;nsdf.top&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;丁帆的blog： &lt;a href=&quot;http://nsdf.top/&quot; title=&quot;丁帆的博客&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;nsdf.top&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;丁帆的blog： &lt;a href=&quot;http://nsdf.top/&quot;&gt;nsdf.top&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;丁帆的blog： &lt;a href=&quot;http://nsdf.top/&quot; title=&quot;丁帆的博客&quot;&gt;nsdf.top&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
-      <category term="基于 Heox + NexT 的 blog 搭建" scheme="http://yoursite.com/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
+      <category term="基于 Heox + NexT 的 blog 搭建" scheme="https://nsdf.top/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="MarkDown" scheme="http://yoursite.com/tags/MarkDown/"/>
+      <category term="MarkDown" scheme="https://nsdf.top/tags/MarkDown/"/>
     
-      <category term="iframe" scheme="http://yoursite.com/tags/iframe/"/>
+      <category term="iframe" scheme="https://nsdf.top/tags/iframe/"/>
     
-      <category term="链接跳转" scheme="http://yoursite.com/tags/%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC/"/>
+      <category term="链接跳转" scheme="https://nsdf.top/tags/%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC/"/>
     
-      <category term="图片链接" scheme="http://yoursite.com/tags/%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5/"/>
+      <category term="图片链接" scheme="https://nsdf.top/tags/%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5/"/>
     
-      <category term="blog技巧" scheme="http://yoursite.com/tags/blog%E6%8A%80%E5%B7%A7/"/>
+      <category term="blog技巧" scheme="https://nsdf.top/tags/blog%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
   <entry>
     <title>VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法</title>
-    <link href="http://yoursite.com/2018/08/18/vscod-python-filenotefounder/"/>
-    <id>http://yoursite.com/2018/08/18/vscod-python-filenotefounder/</id>
+    <link href="https://nsdf.top/2018/08/18/vscod-python-filenotefounder/"/>
+    <id>https://nsdf.top/2018/08/18/vscod-python-filenotefounder/</id>
     <published>2018-08-17T16:00:00.000Z</published>
     <updated>2018-09-08T19:43:58.670Z</updated>
     
@@ -212,23 +212,23 @@
     
     </summary>
     
-      <category term="Visual Studio Code" scheme="http://yoursite.com/categories/Visual-Studio-Code/"/>
+      <category term="Visual Studio Code" scheme="https://nsdf.top/categories/Visual-Studio-Code/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://nsdf.top/tags/Python/"/>
     
-      <category term="FileNotFoundError" scheme="http://yoursite.com/tags/FileNotFoundError/"/>
+      <category term="FileNotFoundError" scheme="https://nsdf.top/tags/FileNotFoundError/"/>
     
-      <category term="cwd" scheme="http://yoursite.com/tags/cwd/"/>
+      <category term="cwd" scheme="https://nsdf.top/tags/cwd/"/>
     
-      <category term="VSCode" scheme="http://yoursite.com/tags/VSCode/"/>
+      <category term="VSCode" scheme="https://nsdf.top/tags/VSCode/"/>
     
   </entry>
   
   <entry>
     <title>一些值得推荐的内容</title>
-    <link href="http://yoursite.com/2018/08/18/%E4%B8%80%E4%BA%9B%E6%8E%A8%E8%8D%90%E7%9A%84%E6%96%87%E7%AB%A0/"/>
-    <id>http://yoursite.com/2018/08/18/一些推荐的文章/</id>
+    <link href="https://nsdf.top/2018/08/18/%E4%B8%80%E4%BA%9B%E6%8E%A8%E8%8D%90%E7%9A%84%E6%96%87%E7%AB%A0/"/>
+    <id>https://nsdf.top/2018/08/18/一些推荐的文章/</id>
     <published>2018-08-17T16:00:00.000Z</published>
     <updated>2018-09-11T14:52:08.428Z</updated>
     
@@ -246,18 +246,18 @@
     </summary>
     
     
-      <category term="macOS" scheme="http://yoursite.com/tags/macOS/"/>
+      <category term="macOS" scheme="https://nsdf.top/tags/macOS/"/>
     
-      <category term="推荐" scheme="http://yoursite.com/tags/%E6%8E%A8%E8%8D%90/"/>
+      <category term="推荐" scheme="https://nsdf.top/tags/%E6%8E%A8%E8%8D%90/"/>
     
-      <category term="egpu" scheme="http://yoursite.com/tags/egpu/"/>
+      <category term="egpu" scheme="https://nsdf.top/tags/egpu/"/>
     
   </entry>
   
   <entry>
     <title>Mac 上使用 Visual Studio Code 进行 Python 开发</title>
-    <link href="http://yoursite.com/2018/08/12/mac%E4%B8%8A%E4%BD%BF%E7%94%A8vscode%E8%BF%9B%E8%A1%8Cpython%E5%BC%80%E5%8F%91/"/>
-    <id>http://yoursite.com/2018/08/12/mac上使用vscode进行python开发/</id>
+    <link href="https://nsdf.top/2018/08/12/mac%E4%B8%8A%E4%BD%BF%E7%94%A8vscode%E8%BF%9B%E8%A1%8Cpython%E5%BC%80%E5%8F%91/"/>
+    <id>https://nsdf.top/2018/08/12/mac上使用vscode进行python开发/</id>
     <published>2018-08-11T16:00:00.000Z</published>
     <updated>2018-09-08T19:45:55.750Z</updated>
     
@@ -276,25 +276,25 @@
     
     </summary>
     
-      <category term="Visual Studio Code" scheme="http://yoursite.com/categories/Visual-Studio-Code/"/>
+      <category term="Visual Studio Code" scheme="https://nsdf.top/categories/Visual-Studio-Code/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://nsdf.top/tags/Python/"/>
     
-      <category term="Visual Studio Code" scheme="http://yoursite.com/tags/Visual-Studio-Code/"/>
+      <category term="Visual Studio Code" scheme="https://nsdf.top/tags/Visual-Studio-Code/"/>
     
-      <category term="Python安装&amp;配置" scheme="http://yoursite.com/tags/Python%E5%AE%89%E8%A3%85-%E9%85%8D%E7%BD%AE/"/>
+      <category term="Python安装&amp;配置" scheme="https://nsdf.top/tags/Python%E5%AE%89%E8%A3%85-%E9%85%8D%E7%BD%AE/"/>
     
-      <category term="yapf" scheme="http://yoursite.com/tags/yapf/"/>
+      <category term="yapf" scheme="https://nsdf.top/tags/yapf/"/>
     
-      <category term="flake8" scheme="http://yoursite.com/tags/flake8/"/>
+      <category term="flake8" scheme="https://nsdf.top/tags/flake8/"/>
     
   </entry>
   
   <entry>
     <title>我的第一篇Blog</title>
-    <link href="http://yoursite.com/2018/07/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2018/07/24/我的第一篇博客/</id>
+    <link href="https://nsdf.top/2018/07/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://nsdf.top/2018/07/24/我的第一篇博客/</id>
     <published>2018-07-23T16:00:00.000Z</published>
     <updated>2018-09-11T14:52:23.433Z</updated>
     
@@ -310,10 +310,10 @@
     
     </summary>
     
-      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://nsdf.top/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://nsdf.top/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   

@@ -112,22 +112,18 @@
 
 
 
-  <meta name="description" content="问题在vscode中使用Python,通过建立一个Python程序读取同一子目录下的txt文件, 并打印其内容. 预期结果程序读取同一个子目录中的 content.txt 文件, 然后打印其内容:12stay hungrystay foolish 实际结果通过debug, 提示如下错误:1FileNotFoundError: [Errno 2] No such file or directory:">
-<meta name="keywords" content="Python,FileNotFoundError,cwd,VSCode">
+  <meta name="description" content="看，前面有个坑。    ─=≡Σ(((つ•̀ω•́)つ))">
+<meta name="keywords" content="hexo,blog 搭建,git,macOS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法">
-<meta property="og:url" content="https://nsdf.top/2018/08/18/vscod-python-filenotefounder/index.html">
+<meta property="og:title" content="blog搭建踩坑指南">
+<meta property="og:url" content="https://nsdf.top/blog搭建踩坑指南.html">
 <meta property="og:site_name" content="DF Blog">
-<meta property="og:description" content="问题在vscode中使用Python,通过建立一个Python程序读取同一子目录下的txt文件, 并打印其内容. 预期结果程序读取同一个子目录中的 content.txt 文件, 然后打印其内容:12stay hungrystay foolish 实际结果通过debug, 提示如下错误:1FileNotFoundError: [Errno 2] No such file or directory:">
+<meta property="og:description" content="看，前面有个坑。    ─=≡Σ(((つ•̀ω•́)つ))">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://nsdf.top/images/post/vscode_python_filenotefound_1.png">
-<meta property="og:image" content="https://nsdf.top/images/post/vscode_python_filenotefound_2.png">
-<meta property="og:image" content="https://nsdf.top/images/post/vscode_python_filenotefound_3.png">
-<meta property="og:updated_time" content="2018-09-08T19:43:58.670Z">
+<meta property="og:updated_time" content="2018-09-08T19:33:11.896Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法">
-<meta name="twitter:description" content="问题在vscode中使用Python,通过建立一个Python程序读取同一子目录下的txt文件, 并打印其内容. 预期结果程序读取同一个子目录中的 content.txt 文件, 然后打印其内容:12stay hungrystay foolish 实际结果通过debug, 提示如下错误:1FileNotFoundError: [Errno 2] No such file or directory:">
-<meta name="twitter:image" content="https://nsdf.top/images/post/vscode_python_filenotefound_1.png">
+<meta name="twitter:title" content="blog搭建踩坑指南">
+<meta name="twitter:description" content="看，前面有个坑。    ─=≡Σ(((つ•̀ω•́)つ))">
 
 
 
@@ -136,7 +132,7 @@
 
 
 
-  <link rel="canonical" href="https://nsdf.top/2018/08/18/vscod-python-filenotefounder/"/>
+  <link rel="canonical" href="https://nsdf.top/blog搭建踩坑指南.html"/>
 
 
 
@@ -146,7 +142,7 @@
   };
 </script>
 
-  <title>VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法 | DF Blog</title>
+  <title>blog搭建踩坑指南 | DF Blog</title>
   
 
 
@@ -359,7 +355,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://nsdf.top/2018/08/18/vscod-python-filenotefounder/">
+    <link itemprop="mainEntityOfPage" href="https://nsdf.top/blog搭建踩坑指南.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DingFan">
@@ -376,7 +372,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法
+          <h1 class="post-title" itemprop="name headline">blog搭建踩坑指南
               
             
           </h1>
@@ -401,7 +397,7 @@
                 
               
 
-              <time title="创建时间：2018-08-18 00:00:00" itemprop="dateCreated datePublished" datetime="2018-08-18T00:00:00+08:00">2018-08-18</time>
+              <time title="创建时间：2018-09-07 03:36:24" itemprop="dateCreated datePublished" datetime="2018-09-07T03:36:24+08:00">2018-09-07</time>
             
 
             
@@ -418,7 +414,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-09-09 03:43:58" itemprop="dateModified" datetime="2018-09-09T03:43:58+08:00">2018-09-09</time>
+                <time title="修改时间：2018-09-09 03:33:11" itemprop="dateModified" datetime="2018-09-09T03:33:11+08:00">2018-09-09</time>
               
             
           </span>
@@ -435,7 +431,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Visual-Studio-Code/" itemprop="url" rel="index"><span itemprop="name">Visual Studio Code</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/基于-Heox-NexT-的-blog-搭建/" itemprop="url" rel="index"><span itemprop="name">基于 Heox + NexT 的 blog 搭建</span></a></span>
 
                 
                 
@@ -450,10 +446,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/08/18/vscod-python-filenotefounder/#comments" itemprop="discussionUrl">
+                <a href="/blog搭建踩坑指南.html#comments" itemprop="discussionUrl">
                 
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/08/18/vscod-python-filenotefounder/" itemprop="commentCount"></span>
+                        data-disqus-identifier="blog搭建踩坑指南.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -489,21 +485,9 @@
       
 
       
-        <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>在vscode中使用Python,通过建立一个Python程序读取同一子目录下的txt文件, 并打印其内容.</p>
-<h2 id="预期结果"><a href="#预期结果" class="headerlink" title="预期结果"></a>预期结果</h2><p>程序读取同一个子目录中的 <code>content.txt</code> 文件, 然后打印其内容:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">stay hungry</span><br><span class="line">stay foolish</span><br></pre></td></tr></table></figure></p>
-<h2 id="实际结果"><a href="#实际结果" class="headerlink" title="实际结果"></a>实际结果</h2><p>通过debug, 提示如下错误:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FileNotFoundError: [Errno 2] No such file or directory: &apos;content.txt&apos;</span><br></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<p><img src="/images/post/vscode_python_filenotefound_1.png" alt="vscode_python_filenotefound_1-c650"></p>
-<h1 id="错误分析"><a href="#错误分析" class="headerlink" title="错误分析"></a>错误分析</h1><p>vscode在进行debug时,使用的路径并不是当前python文件所在的目录,而是固定为项目文件夹的根目录.所以当程序试图从根目录寻找此文件时,自然会报错.于是我进一步尝试将文本文件移动至项目的根目录,错误消失.<br>所以,解决问题的关键就是修改vscode在进行debug时使用的目录,使其自动的指向当前python文件所在目录.</p>
-<p><img src="/images/post/vscode_python_filenotefound_2.png" alt="vscode_python_filenotefound_2-c650"></p>
-<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>初步思路是通过在 VSCode 的 Setting 中或者 debug 的配置文件中进行配置，来解决这个问题。通过 Google 后，我在 StackOverflow 上找到了具体解决方案。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接:"></a>参考链接:</h2><ul>
-<li><a href="https://stackoverflow.com/questions/43801142/vscode-working-directory-when-debugging-python" target="_blank" rel="noopener">Stack Overflow - VSCode — how to set working directory for debug</a></li>
-<li><a href="https://stackoverflow.com/questions/43801142/vscode-working-directory-when-debugging-python" target="_blank" rel="noopener">Stack Overflow - vscode working directory when debugging python</a></li>
-</ul>
-<h2 id="解决方式"><a href="#解决方式" class="headerlink" title="解决方式"></a>解决方式</h2><p>点击vscode侧边的调试按钮,在出现的侧栏顶端找到设置按钮(图中齿轮图标), 点击打开 <code>launch.json</code> 文件, 在文件中找到当前所用调试的方式, 添加cwd配置 <code>&quot;cwd&quot;: &quot;&quot;</code>. (我这里使用的是 <code>Python: Terminal (integrated)</code>) 添加完成后, 在此debug程序, 发现错误消失.</p>
-<p><img src="/images/post/vscode_python_filenotefound_3.png" alt="vscode_python_filenotefound_3-c650"></p>
-<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><p>每次打开一个新的项目文件夹时, 都需要重新在<code>launch.json</code>文件中重新配置参数.</p>
+        <blockquote>
+<p>看，前面有个坑。    ─=≡Σ(((つ•̀ω•́)つ))</p>
+</blockquote>
 
       
     </div>
@@ -525,7 +509,7 @@
     <strong>本文作者： </strong>DingFan</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://nsdf.top/2018/08/18/vscod-python-filenotefounder/" title="VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法">https://nsdf.top/2018/08/18/vscod-python-filenotefounder/</a>
+    <a href="https://nsdf.top/blog搭建踩坑指南.html" title="blog搭建踩坑指南">https://nsdf.top/blog搭建踩坑指南.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
@@ -538,13 +522,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Python/" rel="tag"># Python</a>
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
           
-            <a href="/tags/FileNotFoundError/" rel="tag"># FileNotFoundError</a>
+            <a href="/tags/blog-搭建/" rel="tag"># blog 搭建</a>
           
-            <a href="/tags/cwd/" rel="tag"># cwd</a>
+            <a href="/tags/git/" rel="tag"># git</a>
           
-            <a href="/tags/VSCode/" rel="tag"># VSCode</a>
+            <a href="/tags/macOS/" rel="tag"># macOS</a>
           
         </div>
       
@@ -577,8 +561,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/18/一些推荐的文章/" rel="next" title="一些值得推荐的内容">
-                <i class="fa fa-chevron-left"></i> 一些值得推荐的内容
+              <a href="/leetcode-122-买卖股票的最佳时机-ii-best-time-to-buy-and-sell-stock-ii.html" rel="next" title="LeetCode-122.买卖股票的最佳时机 II | Best Time to Buy and Sell Stock II">
+                <i class="fa fa-chevron-left"></i> LeetCode-122.买卖股票的最佳时机 II | Best Time to Buy and Sell Stock II
               </a>
             
           </div>
@@ -587,8 +571,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/26/通过markdown编写blog进阶技巧/" rel="prev" title="通过MarkDown编写blog进阶技巧">
-                通过MarkDown编写blog进阶技巧 <i class="fa fa-chevron-right"></i>
+              <a href="/会对-本地搜索-功能出现影响的文本内容.html" rel="prev" title="会对"本地搜索"功能出现影响的文本内容">
+                会对"本地搜索"功能出现影响的文本内容 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -644,17 +628,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -856,22 +831,6 @@
       </section>
 
       
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#预期结果"><span class="nav-number">1.1.</span> <span class="nav-text">预期结果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实际结果"><span class="nav-number">1.2.</span> <span class="nav-text">实际结果</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#错误分析"><span class="nav-number">2.</span> <span class="nav-text">错误分析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解决方案"><span class="nav-number">3.</span> <span class="nav-text">解决方案</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#参考链接"><span class="nav-number">3.1.</span> <span class="nav-text">参考链接:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方式"><span class="nav-number">3.2.</span> <span class="nav-text">解决方式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#补充"><span class="nav-number">4.</span> <span class="nav-text">补充</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
 
       
 
@@ -1045,9 +1004,9 @@
   
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'https://nsdf.top/2018/08/18/vscod-python-filenotefounder/';
-        this.page.identifier = '2018/08/18/vscod-python-filenotefounder/';
-        this.page.title = 'VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法';
+        this.page.url = 'https://nsdf.top/blog搭建踩坑指南.html';
+        this.page.identifier = 'blog搭建踩坑指南.html';
+        this.page.title = 'blog搭建踩坑指南';
         };
       function loadComments () {
         var d = document, s = d.createElement('script');

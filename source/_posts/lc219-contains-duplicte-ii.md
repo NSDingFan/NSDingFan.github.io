@@ -1,6 +1,5 @@
 ---
 title:      LeetCode-219.存在重复元素 II | Contains Duplicate II
-# subtitle:   哈希表 列表 字典
 data:       2018-09-01
 categories:
     - LeetCode

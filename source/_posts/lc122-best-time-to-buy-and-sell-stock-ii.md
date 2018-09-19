@@ -1,6 +1,5 @@
 ---
 title:      LeetCode-122.买卖股票的最佳时机 II | Best Time to Buy and Sell Stock II
-# subtitle:   贪心算法 列表 列表解析
 data:       2018-09-02
 categories:
     - LeetCode

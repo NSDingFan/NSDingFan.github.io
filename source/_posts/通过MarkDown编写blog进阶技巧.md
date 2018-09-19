@@ -1,6 +1,5 @@
 ---
 title:      通过MarkDown编写blog进阶技巧
-# subtitle:   插入视频，插入链接等技巧
 data:       2018-08-26
 categories:
     - 基于 Heox + NexT 的 blog 搭建

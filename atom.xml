@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://nsdf.top/"/>
-  <updated>2018-09-19T12:46:48.842Z</updated>
+  <updated>2018-09-21T14:02:56.748Z</updated>
   <id>https://nsdf.top/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>转载 | 危险的 target=&quot;_blank&quot; 与 “opener”</title>
+    <link href="https://nsdf.top/%E8%BD%AC%E8%BD%BD-%E5%8D%B1%E9%99%A9%E7%9A%84-target-blank-%E4%B8%8E-%E2%80%9Copener%E2%80%9D.html"/>
+    <id>https://nsdf.top/转载-危险的-target-blank-与-“opener”.html</id>
+    <published>2018-09-21T10:16:56.152Z</published>
+    <updated>2018-09-21T14:02:56.748Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://knownsec-fed.com/static/header-b2d5797f97e9d99eadd2357194ee34da-d6978.jpeg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在网页中使用链接时，如果想要让浏览器自动在新的标签页打开指定的地址，通常的做法就是在 a 标签上添加 target等于”_blank” 属性。&lt;/p&gt;
+&lt;p&gt;然而，就是这个属性，为钓鱼攻击者带来了可乘之机。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Web技术" scheme="https://nsdf.top/categories/Web%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="target=" scheme="https://nsdf.top/tags/target/"/>
+    
+      <category term="web安全" scheme="https://nsdf.top/tags/web%E5%AE%89%E5%85%A8/"/>
+    
+      <category term="html" scheme="https://nsdf.top/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
     <title>LeetCode-905. 按奇偶校验排序数组 | Sort Array By Parity</title>
     <link href="https://nsdf.top/leetcode-905-%E6%8C%89%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84-sort-array-by-parity.html"/>
     <id>https://nsdf.top/leetcode-905-按奇偶校验排序数组-sort-array-by-parity.html</id>
     <published>2018-09-16T16:03:30.768Z</published>
-    <updated>2018-09-19T12:46:48.842Z</updated>
+    <updated>2018-09-21T13:46:44.352Z</updated>
     
     <summary type="html">
     
@@ -62,7 +90,7 @@
     <link href="https://nsdf.top/%E9%85%8D%E5%90%88%E4%BD%BF%E7%94%A8mweb%E8%BF%9B%E8%A1%8Cblog%E7%BC%96%E5%86%99.html"/>
     <id>https://nsdf.top/配合使用mweb进行blog编写.html</id>
     <published>2018-09-08T20:10:07.000Z</published>
-    <updated>2018-09-12T11:19:10.107Z</updated>
+    <updated>2018-09-21T14:06:25.854Z</updated>
     
     <summary type="html">
     
@@ -88,7 +116,7 @@
     <link href="https://nsdf.top/%E4%BC%9A%E5%AF%B9-%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2-%E5%8A%9F%E8%83%BD%E5%87%BA%E7%8E%B0%E5%BD%B1%E5%93%8D%E7%9A%84%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9.html"/>
     <id>https://nsdf.top/会对-本地搜索-功能出现影响的文本内容.html</id>
     <published>2018-09-08T13:28:34.000Z</published>
-    <updated>2018-09-19T12:50:20.580Z</updated>
+    <updated>2018-09-21T14:04:09.508Z</updated>
     
     <summary type="html">
     
@@ -111,7 +139,7 @@
     <link href="https://nsdf.top/blog%E6%90%AD%E5%BB%BA%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97.html"/>
     <id>https://nsdf.top/blog搭建踩坑指南.html</id>
     <published>2018-09-06T19:36:24.000Z</published>
-    <updated>2018-09-21T13:29:09.143Z</updated>
+    <updated>2018-09-21T14:08:44.864Z</updated>
     
     <summary type="html">
     
@@ -144,7 +172,7 @@
     <link href="https://nsdf.top/leetcode-122-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA-ii-best-time-to-buy-and-sell-stock-ii.html"/>
     <id>https://nsdf.top/leetcode-122-买卖股票的最佳时机-ii-best-time-to-buy-and-sell-stock-ii.html</id>
     <published>2018-09-02T18:35:15.656Z</published>
-    <updated>2018-09-19T12:50:20.463Z</updated>
+    <updated>2018-09-21T13:45:50.763Z</updated>
     
     <summary type="html">
     
@@ -178,7 +206,7 @@
     <link href="https://nsdf.top/leetcode-219-%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0-ii-contains-duplicate-ii.html"/>
     <id>https://nsdf.top/leetcode-219-存在重复元素-ii-contains-duplicate-ii.html</id>
     <published>2018-09-02T18:33:33.258Z</published>
-    <updated>2018-09-19T12:50:20.490Z</updated>
+    <updated>2018-09-21T13:46:29.687Z</updated>
     
     <summary type="html">
     
@@ -211,7 +239,7 @@
     <link href="https://nsdf.top/%E9%80%9A%E8%BF%87markdown%E7%BC%96%E5%86%99blog%E8%BF%9B%E9%98%B6%E6%8A%80%E5%B7%A7.html"/>
     <id>https://nsdf.top/通过markdown编写blog进阶技巧.html</id>
     <published>2018-08-26T06:29:15.499Z</published>
-    <updated>2018-09-19T12:50:20.518Z</updated>
+    <updated>2018-09-21T14:06:49.052Z</updated>
     
     <summary type="html">
     
@@ -239,39 +267,11 @@
   </entry>
   
   <entry>
-    <title>VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法</title>
-    <link href="https://nsdf.top/vscode-%E4%B8%AD%E4%BD%BF%E7%94%A8-python-%E5%BC%82%E5%B8%B8%E6%8A%A5%E9%94%99-filenotfounderror-%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.html"/>
-    <id>https://nsdf.top/vscode-中使用-python-异常报错-filenotfounderror-的解决办法.html</id>
-    <published>2018-08-17T16:00:00.000Z</published>
-    <updated>2018-09-19T12:50:20.400Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h1&gt;&lt;p&gt;在vscode中使用Python,通过建立一个Python程序读取同一子目录下的txt文件, 并打印其内容.&lt;/p&gt;
-&lt;h2 id=&quot;预期结果&quot;&gt;&lt;a href=&quot;#预期结果&quot; class=&quot;headerlink&quot; title=&quot;预期结果&quot;&gt;&lt;/a&gt;预期结果&lt;/h2&gt;&lt;p&gt;程序读取同一个子目录中的 &lt;code&gt;content.txt&lt;/code&gt; 文件, 然后打印其内容:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;stay hungry&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;stay foolish&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h2 id=&quot;实际结果&quot;&gt;&lt;a href=&quot;#实际结果&quot; class=&quot;headerlink&quot; title=&quot;实际结果&quot;&gt;&lt;/a&gt;实际结果&lt;/h2&gt;&lt;p&gt;通过debug, 提示如下错误:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;FileNotFoundError: [Errno 2] No such file or directory: &amp;apos;content.txt&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Visual Studio Code" scheme="https://nsdf.top/categories/Visual-Studio-Code/"/>
-    
-    
-      <category term="Python" scheme="https://nsdf.top/tags/Python/"/>
-    
-      <category term="FileNotFoundError" scheme="https://nsdf.top/tags/FileNotFoundError/"/>
-    
-      <category term="cwd" scheme="https://nsdf.top/tags/cwd/"/>
-    
-      <category term="VSCode" scheme="https://nsdf.top/tags/VSCode/"/>
-    
-  </entry>
-  
-  <entry>
     <title>一些值得推荐的内容</title>
     <link href="https://nsdf.top/%E4%B8%80%E4%BA%9B%E5%80%BC%E5%BE%97%E6%8E%A8%E8%8D%90%E7%9A%84%E5%86%85%E5%AE%B9.html"/>
     <id>https://nsdf.top/一些值得推荐的内容.html</id>
     <published>2018-08-17T16:00:00.000Z</published>
-    <updated>2018-09-21T13:20:31.982Z</updated>
+    <updated>2018-09-21T14:05:54.501Z</updated>
     
     <summary type="html">
     
@@ -296,11 +296,39 @@
   </entry>
   
   <entry>
+    <title>VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法</title>
+    <link href="https://nsdf.top/vscode-%E4%B8%AD%E4%BD%BF%E7%94%A8-python-%E5%BC%82%E5%B8%B8%E6%8A%A5%E9%94%99-filenotfounderror-%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.html"/>
+    <id>https://nsdf.top/vscode-中使用-python-异常报错-filenotfounderror-的解决办法.html</id>
+    <published>2018-08-17T16:00:00.000Z</published>
+    <updated>2018-09-21T13:48:13.433Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h1&gt;&lt;p&gt;在vscode中使用Python,通过建立一个Python程序读取同一子目录下的txt文件, 并打印其内容.&lt;/p&gt;
+&lt;h2 id=&quot;预期结果&quot;&gt;&lt;a href=&quot;#预期结果&quot; class=&quot;headerlink&quot; title=&quot;预期结果&quot;&gt;&lt;/a&gt;预期结果&lt;/h2&gt;&lt;p&gt;程序读取同一个子目录中的 &lt;code&gt;content.txt&lt;/code&gt; 文件, 然后打印其内容:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;stay hungry&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;stay foolish&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;实际结果&quot;&gt;&lt;a href=&quot;#实际结果&quot; class=&quot;headerlink&quot; title=&quot;实际结果&quot;&gt;&lt;/a&gt;实际结果&lt;/h2&gt;&lt;p&gt;通过debug, 提示如下错误:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;FileNotFoundError: [Errno 2] No such file or directory: &amp;apos;content.txt&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Visual Studio Code" scheme="https://nsdf.top/categories/Visual-Studio-Code/"/>
+    
+    
+      <category term="Python" scheme="https://nsdf.top/tags/Python/"/>
+    
+      <category term="FileNotFoundError" scheme="https://nsdf.top/tags/FileNotFoundError/"/>
+    
+      <category term="cwd" scheme="https://nsdf.top/tags/cwd/"/>
+    
+      <category term="VSCode" scheme="https://nsdf.top/tags/VSCode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Mac 上使用 Visual Studio Code 进行 Python 开发</title>
     <link href="https://nsdf.top/mac-%E4%B8%8A%E4%BD%BF%E7%94%A8-visual-studio-code-%E8%BF%9B%E8%A1%8C-python-%E5%BC%80%E5%8F%91.html"/>
     <id>https://nsdf.top/mac-上使用-visual-studio-code-进行-python-开发.html</id>
     <published>2018-08-11T16:00:00.000Z</published>
-    <updated>2018-09-19T12:50:20.423Z</updated>
+    <updated>2018-09-21T14:07:36.570Z</updated>
     
     <summary type="html">
     
@@ -337,7 +365,7 @@
     <link href="https://nsdf.top/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog.html"/>
     <id>https://nsdf.top/我的第一篇blog.html</id>
     <published>2018-07-23T16:00:00.000Z</published>
-    <updated>2018-09-19T12:50:20.382Z</updated>
+    <updated>2018-09-21T14:03:39.004Z</updated>
     
     <summary type="html">
     

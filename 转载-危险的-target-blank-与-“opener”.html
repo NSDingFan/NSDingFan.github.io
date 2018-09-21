@@ -124,7 +124,7 @@
 <meta property="og:image" content="https://knownsec-fed.com/static/same-b0119f9d1839c8a2a30132fac8ccfed1-67abc.png">
 <meta property="og:image" content="https://knownsec-fed.com/static/cross-c634dd4e086fcbb57b8fca08e8075337-67abc.png">
 <meta property="og:image" content="https://knownsec-fed.com/static/caniuse-93575c220af3d268563890501021a14f-abe1c.png">
-<meta property="og:updated_time" content="2018-09-21T14:02:56.748Z">
+<meta property="og:updated_time" content="2018-09-21T15:19:14.497Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="转载 | 危险的 target=&quot;_blank&quot; 与 “opener”">
 <meta name="twitter:description" content="在网页中使用链接时，如果想要让浏览器自动在新的标签页打开指定的地址，通常的做法就是在 a 标签上添加 target等于”_blank” 属性。 然而，就是这个属性，为钓鱼攻击者带来了可乘之机。">
@@ -402,7 +402,7 @@
                 
               
 
-              <time title="创建时间：2018-09-21 18:16:56 / 修改时间：22:02:56" itemprop="dateCreated datePublished" datetime="2018-09-21T18:16:56+08:00">2018-09-21</time>
+              <time title="创建时间：2018-09-21 18:16:56 / 修改时间：23:19:14" itemprop="dateCreated datePublished" datetime="2018-09-21T18:16:56+08:00">2018-09-21</time>
             
 
             
@@ -473,7 +473,7 @@
 <h1 id="起源"><a href="#起源" class="headerlink" title="起源"></a>起源</h1><h2 id="parent-与-opener"><a href="#parent-与-opener" class="headerlink" title="parent 与 opener"></a>parent 与 opener</h2><p>在说 <code>opener</code> 之前，可以先聊聊 <code>&lt;iframe&gt;</code> 中的 <code>parent</code>。</p>
 <p>我们知道，在 <code>&lt;iframe&gt;</code> 中提供了一个用于父子页面交互的对象，叫做 window.parent，我们可以通过 window.parent 对象来从框架中的页面访问父级页面的 window。</p>
 <p><code>opener</code> 与 <code>parent</code> 一样，只不过是用于 <code>&lt;a target=&quot;_blank&quot;&gt;</code> 在新标签页打开的页面的。通过 <code>&lt;a target=&quot;_blank&quot;&gt;</code> 打开的页面，可以直接使用 <code>window.opener</code> 来访问来源页面的 <code>window</code> 对象。</p>
-<h2 id="同域与跨域"><a href="#同域与跨域" class="headerlink" title="同域与跨域"></a>同域与跨域</h2><p>浏览器提供了完整的跨域保护，在域名相同时，<code>parent</code> 对象和 <code>opener</code> 对象实际上就直接是上一级的 <code>window</code> 对象；而当域名不同时，<code>parent</code> 和 <code>opener</code> 则是经过包装的一个 <code>global</code> 对象。这个 <code>global</code> 对象仅提供非常有限的属性访问，并且在这仅有的几个属性中，大部分也都是不允许访问的（访问会直接抛出 <code>DOMException</code>）。<br><img src="https://knownsec-fed.com/static/same-b0119f9d1839c8a2a30132fac8ccfed1-67abc.png" alt=""><br><img src="https://knownsec-fed.com/static/cross-c634dd4e086fcbb57b8fca08e8075337-67abc.png" alt=""></p>
+<h2 id="同域与跨域"><a href="#同域与跨域" class="headerlink" title="同域与跨域"></a>同域与跨域</h2><p>浏览器提供了完整的跨域保护，在域名相同时，<code>parent</code> 对象和 <code>opener</code> 对象实际上就直接是上一级的 <code>window</code> 对象；而当域名不同时，<code>parent</code> 和 <code>opener</code> 则是经过包装的一个 <code>global</code> 对象。这个 <code>global</code> 对象仅提供非常有限的属性访问，并且在这仅有的几个属性中，大部分也都是不允许访问的（访问会直接抛出 <code>DOMException</code>）。<br><img src="https://knownsec-fed.com/static/same-b0119f9d1839c8a2a30132fac8ccfed1-67abc.png" alt=""><img src="https://knownsec-fed.com/static/cross-c634dd4e086fcbb57b8fca08e8075337-67abc.png" alt=""></p>
 <p>在 <code>&lt;iframe&gt;</code> 中，提供了一个 <code>sandbox</code> 属性用于控制框架中的页面的权限，因此即使是同域，也可以控制 <code>&lt;iframe&gt;</code> 的安全性。</p>
 <h1 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h1><p>如果，你的网站上有一个链接，使用了 <code>target=&quot;_blank&quot;</code>，那么一旦用户点击这个链接并进入一个新的标签，新标签中的页面如果存在恶意代码，就可以将你的网站直接导航到一个虚假网站。此时，如果用户回到你的标签页，看到的就是被替换过的页面了。</p>
 <h2 id="详细步骤"><a href="#详细步骤" class="headerlink" title="详细步骤"></a>详细步骤</h2><ol>
@@ -777,7 +777,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">34</span>
+                    <span class="site-state-item-count">30</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

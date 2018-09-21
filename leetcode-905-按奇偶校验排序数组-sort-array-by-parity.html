@@ -1060,12 +1060,6 @@
     
 
     
-      <div id="needsharebutton-float">
-        <span class="btn">
-          <i class="fa fa-share-alt" aria-hidden="true"></i>
-        </span>
-      </div>
-    
 	
     
 
@@ -1539,18 +1533,10 @@
       
           pbOptions.position = "topCenter";
       
+          pbOptions.networks = "Weibo,Wechat,Twitter,Evernote,Mailru";
+      
       new needShareButton('#needsharebutton-postbottom', pbOptions);
     
-    
-      flOptions = {};
-      
-          flOptions.iconStyle = "box";
-      
-          flOptions.boxForm = "vertical";
-      
-          flOptions.position = "topCenter";
-      
-      new needShareButton('#needsharebutton-float', flOptions);
     
   </script>
 

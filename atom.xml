@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://nsdf.top/"/>
-  <updated>2018-09-21T19:16:15.015Z</updated>
+  <updated>2018-09-24T09:45:25.931Z</updated>
   <id>https://nsdf.top/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>LeetCode-908. 最小差值 I | Smallest Range I | max()</title>
+    <link href="https://nsdf.top/leetcode-908-%E6%9C%80%E5%B0%8F%E5%B7%AE%E5%80%BC-i-smallest-range-i-max.html"/>
+    <id>https://nsdf.top/leetcode-908-最小差值-i-smallest-range-i-max.html</id>
+    <published>2018-09-24T06:51:23.777Z</published>
+    <updated>2018-09-24T09:45:25.931Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/smallest-range-i/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h2&gt;&lt;p&gt;给定一个整数数组 &lt;code&gt;A&lt;/code&gt;，对于每个整数 &lt;code&gt;A[i]&lt;/code&gt;，我们可以选择任意 &lt;code&gt;x&lt;/code&gt; 满足 &lt;code&gt;-K &amp;lt;= x &amp;lt;= K&lt;/code&gt;，并将 x 加到 &lt;code&gt;A[i]&lt;/code&gt; 中。&lt;br&gt;在此过程之后，我们得到一些数组 &lt;code&gt;B&lt;/code&gt;。&lt;br&gt;返回 &lt;code&gt;B&lt;/code&gt; 的最大值和 &lt;code&gt;B&lt;/code&gt; 的最小值之间可能存在的最小差值。&lt;/p&gt;
+&lt;p&gt;在此过程之后，我们得到一些数组 B。&lt;/p&gt;
+&lt;p&gt;返回 B 的最大值和 B 的最小值之间可能存在的最小差值。&lt;/p&gt;
+&lt;p&gt;示例 1：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;输入：A = [1], K = 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输出：0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;解释：B = [1]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="https://nsdf.top/categories/LeetCode/"/>
+    
+      <category term="Python Tips" scheme="https://nsdf.top/categories/LeetCode/Python-Tips/"/>
+    
+    
+      <category term="LeetCode" scheme="https://nsdf.top/tags/LeetCode/"/>
+    
+      <category term="Python 內建函数 max()" scheme="https://nsdf.top/tags/Python-%E5%85%A7%E5%BB%BA%E5%87%BD%E6%95%B0-max/"/>
+    
+  </entry>
+  
+  <entry>
     <title>转载 | 危险的 target=&quot;_blank&quot; 与 “opener”</title>
     <link href="https://nsdf.top/%E8%BD%AC%E8%BD%BD-%E5%8D%B1%E9%99%A9%E7%9A%84-target-blank-%E4%B8%8E-%E2%80%9Copener%E2%80%9D.html"/>
     <id>https://nsdf.top/转载-危险的-target-blank-与-“opener”.html</id>
     <published>2018-09-21T10:16:56.152Z</published>
-    <updated>2018-09-21T19:16:15.015Z</updated>
+    <updated>2018-09-21T19:24:30.140Z</updated>
     
     <summary type="html">
     
@@ -45,11 +75,11 @@
   </entry>
   
   <entry>
-    <title>LeetCode-905. 按奇偶校验排序数组 | Sort Array By Parity</title>
-    <link href="https://nsdf.top/leetcode-905-%E6%8C%89%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84-sort-array-by-parity.html"/>
-    <id>https://nsdf.top/leetcode-905-按奇偶校验排序数组-sort-array-by-parity.html</id>
+    <title>LeetCode-905. 按奇偶校验排序数组 | Sort Array By Parity | list.sort(),lambda</title>
+    <link href="https://nsdf.top/leetcode-905-%E6%8C%89%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84-sort-array-by-parity-list-sort-lambda.html"/>
+    <id>https://nsdf.top/leetcode-905-按奇偶校验排序数组-sort-array-by-parity-list-sort-lambda.html</id>
     <published>2018-09-16T16:03:30.768Z</published>
-    <updated>2018-09-21T15:23:02.962Z</updated>
+    <updated>2018-09-24T09:40:53.937Z</updated>
     
     <summary type="html">
     
@@ -84,32 +114,6 @@
   </entry>
   
   <entry>
-    <title>配合使用MWeb进行Blog编写</title>
-    <link href="https://nsdf.top/%E9%85%8D%E5%90%88%E4%BD%BF%E7%94%A8mweb%E8%BF%9B%E8%A1%8Cblog%E7%BC%96%E5%86%99.html"/>
-    <id>https://nsdf.top/配合使用mweb进行blog编写.html</id>
-    <published>2018-09-08T20:10:07.000Z</published>
-    <updated>2018-09-21T14:06:25.854Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;目前用来作为功能测试，以后会进行归纳总结&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h1&gt;&lt;p&gt;更新1&lt;/p&gt;
-&lt;h2 id=&quot;插入图片设置&quot;&gt;&lt;a href=&quot;#插入图片设置&quot; class=&quot;headerlink&quot; title=&quot;插入图片设置&quot;&gt;&lt;/a&gt;插入图片设置&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/post/sanpo-69306134.jpg&quot; alt=&quot;sanpo-69306134-c&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="基于 Heox + NexT 的 blog 搭建" scheme="https://nsdf.top/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
-    
-    
-      <category term="blog 搭建" scheme="https://nsdf.top/tags/blog-%E6%90%AD%E5%BB%BA/"/>
-    
-      <category term="MWeb" scheme="https://nsdf.top/tags/MWeb/"/>
-    
-  </entry>
-  
-  <entry>
     <title>会对&quot;本地搜索&quot;功能出现影响的文本内容</title>
     <link href="https://nsdf.top/%E4%BC%9A%E5%AF%B9-%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2-%E5%8A%9F%E8%83%BD%E5%87%BA%E7%8E%B0%E5%BD%B1%E5%93%8D%E7%9A%84%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9.html"/>
     <id>https://nsdf.top/会对-本地搜索-功能出现影响的文本内容.html</id>
@@ -129,41 +133,6 @@
       <category term="blog 搭建" scheme="https://nsdf.top/tags/blog-%E6%90%AD%E5%BB%BA/"/>
     
       <category term="hexo-local-search" scheme="https://nsdf.top/tags/hexo-local-search/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://nsdf.top/.html"/>
-    <id>https://nsdf.top/.html</id>
-    <published>2018-09-07T14:32:24.299Z</published>
-    <updated>2018-09-21T15:16:47.537Z</updated>
-    
-    <summary type="html">
-    
-      &lt;hr&gt;
-&lt;p&gt;title:      Mac 上使用 Visual Studio Code 进行 Python 开发&lt;br&gt;date:       2018-08-12&lt;br&gt;top:&lt;br&gt;copyright: true&lt;br&gt;comments: true&lt;br&gt;categories:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- Visual Studio Code
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;tags:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- Python
-- Visual Studio Code
-- Python安装&amp;amp;配置
-- yapf
-- flake8
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;在Visual Studio Code 的官方网站中，已经有在 VSCode 上使用 Python 的详细配置了， &lt;/p&gt;
-&lt;p&gt;链接：&lt;a href=&quot;https://code.visualstudio.com/docs/languages/python&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Python in Visual Studio Code&lt;/a&gt;{:target=”_blank”}&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;Python-的安装-macOS&quot;&gt;&lt;a href=&quot;#Python-的安装-macOS&quot; class=&quot;headerlink&quot; title=&quot;Python 的安装 (macOS)&quot;&gt;&lt;/a&gt;Python 的安装 (macOS)&lt;/h1&gt;&lt;h2 id=&quot;检查已安装的-Python-版本&quot;&gt;&lt;a href=&quot;#检查已安装的-Python-版本&quot; class=&quot;headerlink&quot; title=&quot;检查已安装的 Python 版本&quot;&gt;&lt;/a&gt;检查已安装的 Python 版本&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;检查是否安装了python2&lt;/p&gt;
- &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ python&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Python 2.7.15 (default, Jun 17 2018, 12:46:58) &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[GCC 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.2)] on darwin&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Type &amp;quot;help&amp;quot;, &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;quot; or &amp;quot;license&amp;quot; for more information.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
     
   </entry>
   
@@ -201,16 +170,16 @@
   </entry>
   
   <entry>
-    <title>LeetCode-122.买卖股票的最佳时机 II | Best Time to Buy and Sell Stock II</title>
-    <link href="https://nsdf.top/leetcode-122-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA-ii-best-time-to-buy-and-sell-stock-ii.html"/>
-    <id>https://nsdf.top/leetcode-122-买卖股票的最佳时机-ii-best-time-to-buy-and-sell-stock-ii.html</id>
+    <title>LeetCode-122.买卖股票的最佳时机 II | Best Time to Buy and Sell Stock II | 贪心算法,列表解析</title>
+    <link href="https://nsdf.top/leetcode-122-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA-ii-best-time-to-buy-and-sell-stock-ii-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95-%E5%88%97%E8%A1%A8%E8%A7%A3%E6%9E%90.html"/>
+    <id>https://nsdf.top/leetcode-122-买卖股票的最佳时机-ii-best-time-to-buy-and-sell-stock-ii-贪心算法-列表解析.html</id>
     <published>2018-09-02T18:35:15.656Z</published>
-    <updated>2018-09-21T13:45:50.763Z</updated>
+    <updated>2018-09-24T09:40:29.452Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h2&gt;&lt;p&gt;给定一个数组，它的第 &lt;em&gt;i&lt;/em&gt; 个元素是一支给定股票第 &lt;em&gt;i&lt;/em&gt; 天的价格。&lt;/p&gt;
 &lt;p&gt;设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。&lt;/p&gt;
@@ -220,6 +189,8 @@
     </summary>
     
       <category term="LeetCode" scheme="https://nsdf.top/categories/LeetCode/"/>
+    
+      <category term="Python Tips" scheme="https://nsdf.top/categories/LeetCode/Python-Tips/"/>
     
     
       <category term="LeetCode" scheme="https://nsdf.top/tags/LeetCode/"/>
@@ -239,12 +210,12 @@
     <link href="https://nsdf.top/leetcode-219-%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0-ii-contains-duplicate-ii.html"/>
     <id>https://nsdf.top/leetcode-219-存在重复元素-ii-contains-duplicate-ii.html</id>
     <published>2018-09-02T18:33:33.258Z</published>
-    <updated>2018-09-21T13:46:29.687Z</updated>
+    <updated>2018-09-24T09:42:01.278Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/contains-duplicate-ii/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/contains-duplicate-ii/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h2&gt;&lt;p&gt;给定一个整数数组和一个整数 k，判断数组中是否存在两个不同的索引 i 和 j，使得 nums [i] = nums [j]，并且 i 和 j 的差的绝对值最大为 k。&lt;/p&gt;
 &lt;p&gt;示例 1:&lt;/p&gt;
@@ -332,7 +303,7 @@
     <link href="https://nsdf.top/%E4%B8%80%E4%BA%9B%E5%80%BC%E5%BE%97%E6%8E%A8%E8%8D%90%E7%9A%84%E5%86%85%E5%AE%B9.html"/>
     <id>https://nsdf.top/一些值得推荐的内容.html</id>
     <published>2018-08-17T16:00:00.000Z</published>
-    <updated>2018-09-21T14:05:54.501Z</updated>
+    <updated>2018-09-24T09:27:44.501Z</updated>
     
     <summary type="html">
     
@@ -353,6 +324,43 @@
       <category term="推荐" scheme="https://nsdf.top/tags/%E6%8E%A8%E8%8D%90/"/>
     
       <category term="egpu" scheme="https://nsdf.top/tags/egpu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac 上使用 Visual Studio Code 进行 Python 开发</title>
+    <link href="https://nsdf.top/mac-%E4%B8%8A%E4%BD%BF%E7%94%A8-visual-studio-code-%E8%BF%9B%E8%A1%8C-python-%E5%BC%80%E5%8F%91.html"/>
+    <id>https://nsdf.top/mac-上使用-visual-studio-code-进行-python-开发.html</id>
+    <published>2018-08-11T16:00:00.000Z</published>
+    <updated>2018-09-24T09:44:00.481Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;在Visual Studio Code 的官方网站中，已经有在 VSCode 上使用 Python 的详细配置了， &lt;/p&gt;
+&lt;p&gt;链接：&lt;a href=&quot;https://code.visualstudio.com/docs/languages/python&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Python in Visual Studio Code&lt;/a&gt;{:target=”_blank”}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;Python-的安装-macOS&quot;&gt;&lt;a href=&quot;#Python-的安装-macOS&quot; class=&quot;headerlink&quot; title=&quot;Python 的安装 (macOS)&quot;&gt;&lt;/a&gt;Python 的安装 (macOS)&lt;/h1&gt;&lt;h2 id=&quot;检查已安装的-Python-版本&quot;&gt;&lt;a href=&quot;#检查已安装的-Python-版本&quot; class=&quot;headerlink&quot; title=&quot;检查已安装的 Python 版本&quot;&gt;&lt;/a&gt;检查已安装的 Python 版本&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;检查是否安装了python2&lt;/p&gt;
+ &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ python&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Python 2.7.15 (default, Jun 17 2018, 12:46:58) &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[GCC 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.2)] on darwin&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Type &amp;quot;help&amp;quot;, &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;quot; or &amp;quot;license&amp;quot; for more information.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="Visual Studio Code" scheme="https://nsdf.top/categories/Visual-Studio-Code/"/>
+    
+    
+      <category term="Python" scheme="https://nsdf.top/tags/Python/"/>
+    
+      <category term="Visual Studio Code" scheme="https://nsdf.top/tags/Visual-Studio-Code/"/>
+    
+      <category term="Python安装&amp;配置" scheme="https://nsdf.top/tags/Python%E5%AE%89%E8%A3%85-%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="yapf" scheme="https://nsdf.top/tags/yapf/"/>
+    
+      <category term="flake8" scheme="https://nsdf.top/tags/flake8/"/>
     
   </entry>
   

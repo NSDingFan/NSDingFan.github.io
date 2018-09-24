@@ -159,9 +159,9 @@
       <category term="基于 Heox + NexT 的 blog 搭建" scheme="https://nsdf.top/categories/%E5%9F%BA%E4%BA%8E-Heox-NexT-%E7%9A%84-blog-%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="hexo" scheme="https://nsdf.top/tags/hexo/"/>
-    
       <category term="blog 搭建" scheme="https://nsdf.top/tags/blog-%E6%90%AD%E5%BB%BA/"/>
+    
+      <category term="hexo" scheme="https://nsdf.top/tags/hexo/"/>
     
       <category term="git" scheme="https://nsdf.top/tags/git/"/>
     
@@ -271,34 +271,6 @@
   </entry>
   
   <entry>
-    <title>VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法</title>
-    <link href="https://nsdf.top/vscode-%E4%B8%AD%E4%BD%BF%E7%94%A8-python-%E5%BC%82%E5%B8%B8%E6%8A%A5%E9%94%99-filenotfounderror-%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.html"/>
-    <id>https://nsdf.top/vscode-中使用-python-异常报错-filenotfounderror-的解决办法.html</id>
-    <published>2018-08-17T16:00:00.000Z</published>
-    <updated>2018-09-21T13:48:13.433Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h1&gt;&lt;p&gt;在vscode中使用Python,通过建立一个Python程序读取同一子目录下的txt文件, 并打印其内容.&lt;/p&gt;
-&lt;h2 id=&quot;预期结果&quot;&gt;&lt;a href=&quot;#预期结果&quot; class=&quot;headerlink&quot; title=&quot;预期结果&quot;&gt;&lt;/a&gt;预期结果&lt;/h2&gt;&lt;p&gt;程序读取同一个子目录中的 &lt;code&gt;content.txt&lt;/code&gt; 文件, 然后打印其内容:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;stay hungry&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;stay foolish&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h2 id=&quot;实际结果&quot;&gt;&lt;a href=&quot;#实际结果&quot; class=&quot;headerlink&quot; title=&quot;实际结果&quot;&gt;&lt;/a&gt;实际结果&lt;/h2&gt;&lt;p&gt;通过debug, 提示如下错误:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;FileNotFoundError: [Errno 2] No such file or directory: &amp;apos;content.txt&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Visual Studio Code" scheme="https://nsdf.top/categories/Visual-Studio-Code/"/>
-    
-    
-      <category term="Python" scheme="https://nsdf.top/tags/Python/"/>
-    
-      <category term="FileNotFoundError" scheme="https://nsdf.top/tags/FileNotFoundError/"/>
-    
-      <category term="cwd" scheme="https://nsdf.top/tags/cwd/"/>
-    
-      <category term="VSCode" scheme="https://nsdf.top/tags/VSCode/"/>
-    
-  </entry>
-  
-  <entry>
     <title>一些值得推荐的内容</title>
     <link href="https://nsdf.top/%E4%B8%80%E4%BA%9B%E5%80%BC%E5%BE%97%E6%8E%A8%E8%8D%90%E7%9A%84%E5%86%85%E5%AE%B9.html"/>
     <id>https://nsdf.top/一些值得推荐的内容.html</id>
@@ -324,6 +296,34 @@
       <category term="推荐" scheme="https://nsdf.top/tags/%E6%8E%A8%E8%8D%90/"/>
     
       <category term="egpu" scheme="https://nsdf.top/tags/egpu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法</title>
+    <link href="https://nsdf.top/vscode-%E4%B8%AD%E4%BD%BF%E7%94%A8-python-%E5%BC%82%E5%B8%B8%E6%8A%A5%E9%94%99-filenotfounderror-%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.html"/>
+    <id>https://nsdf.top/vscode-中使用-python-异常报错-filenotfounderror-的解决办法.html</id>
+    <published>2018-08-17T16:00:00.000Z</published>
+    <updated>2018-09-21T13:48:13.433Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h1&gt;&lt;p&gt;在vscode中使用Python,通过建立一个Python程序读取同一子目录下的txt文件, 并打印其内容.&lt;/p&gt;
+&lt;h2 id=&quot;预期结果&quot;&gt;&lt;a href=&quot;#预期结果&quot; class=&quot;headerlink&quot; title=&quot;预期结果&quot;&gt;&lt;/a&gt;预期结果&lt;/h2&gt;&lt;p&gt;程序读取同一个子目录中的 &lt;code&gt;content.txt&lt;/code&gt; 文件, 然后打印其内容:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;stay hungry&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;stay foolish&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;实际结果&quot;&gt;&lt;a href=&quot;#实际结果&quot; class=&quot;headerlink&quot; title=&quot;实际结果&quot;&gt;&lt;/a&gt;实际结果&lt;/h2&gt;&lt;p&gt;通过debug, 提示如下错误:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;FileNotFoundError: [Errno 2] No such file or directory: &amp;apos;content.txt&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Visual Studio Code" scheme="https://nsdf.top/categories/Visual-Studio-Code/"/>
+    
+    
+      <category term="Python" scheme="https://nsdf.top/tags/Python/"/>
+    
+      <category term="FileNotFoundError" scheme="https://nsdf.top/tags/FileNotFoundError/"/>
+    
+      <category term="cwd" scheme="https://nsdf.top/tags/cwd/"/>
+    
+      <category term="VSCode" scheme="https://nsdf.top/tags/VSCode/"/>
     
   </entry>
   

@@ -61,8 +61,8 @@
         <category>基于 Heox + NexT 的 blog 搭建</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>blog 搭建</tag>
+        <tag>hexo</tag>
         <tag>git</tag>
         <tag>macOS</tag>
       </tags>
@@ -114,6 +114,16 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[一些值得推荐的内容]]></title>
+    <url>%2F%E4%B8%80%E4%BA%9B%E5%80%BC%E5%BE%97%E6%8E%A8%E8%8D%90%E7%9A%84%E5%86%85%E5%AE%B9.html</url>
+    <content type="text"><![CDATA[macOS ibuick - macOS 与 external GPU (eGPU) 非常详细的关于 macOS 下 外置显卡 (eGPU) 的设置，使用以及注意事项 的文章。]]></content>
+      <tags>
+        <tag>macOS</tag>
+        <tag>推荐</tag>
+        <tag>egpu</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法]]></title>
     <url>%2Fvscode-%E4%B8%AD%E4%BD%BF%E7%94%A8-python-%E5%BC%82%E5%B8%B8%E6%8A%A5%E9%94%99-filenotfounderror-%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.html</url>
     <content type="text"><![CDATA[问题在vscode中使用Python,通过建立一个Python程序读取同一子目录下的txt文件, 并打印其内容. 预期结果程序读取同一个子目录中的 content.txt 文件, 然后打印其内容:12stay hungrystay foolish 实际结果通过debug, 提示如下错误:1FileNotFoundError: [Errno 2] No such file or directory: &apos;content.txt&apos; 错误分析vscode在进行debug时,使用的路径并不是当前python文件所在的目录,而是固定为项目文件夹的根目录.所以当程序试图从根目录寻找此文件时,自然会报错.于是我进一步尝试将文本文件移动至项目的根目录,错误消失.所以,解决问题的关键就是修改vscode在进行debug时使用的目录,使其自动的指向当前python文件所在目录. 解决方案初步思路是通过在 VSCode 的 Setting 中或者 debug 的配置文件中进行配置，来解决这个问题。通过 Google 后，我在 StackOverflow 上找到了具体解决方案。 参考链接: Stack Overflow - VSCode — how to set working directory for debug Stack Overflow - vscode working directory when debugging python 解决方式点击vscode侧边的调试按钮,在出现的侧栏顶端找到设置按钮(图中齿轮图标), 点击打开 launch.json 文件, 在文件中找到当前所用调试的方式, 添加cwd配置 &quot;cwd&quot;: &quot;&quot;. (我这里使用的是 Python: Terminal (integrated)) 添加完成后, 在此debug程序, 发现错误消失. 补充每次打开一个新的项目文件夹时, 都需要重新在launch.json文件中重新配置参数.]]></content>
@@ -125,16 +135,6 @@
         <tag>FileNotFoundError</tag>
         <tag>cwd</tag>
         <tag>VSCode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[一些值得推荐的内容]]></title>
-    <url>%2F%E4%B8%80%E4%BA%9B%E5%80%BC%E5%BE%97%E6%8E%A8%E8%8D%90%E7%9A%84%E5%86%85%E5%AE%B9.html</url>
-    <content type="text"><![CDATA[macOS ibuick - macOS 与 external GPU (eGPU) 非常详细的关于 macOS 下 外置显卡 (eGPU) 的设置，使用以及注意事项 的文章。]]></content>
-      <tags>
-        <tag>macOS</tag>
-        <tag>推荐</tag>
-        <tag>egpu</tag>
       </tags>
   </entry>
   <entry>

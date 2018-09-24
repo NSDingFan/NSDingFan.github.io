@@ -1,6 +1,9 @@
 ---
 title:      通过MarkDown编写blog进阶技巧
 data:       2018-08-26
+top:
+copyright: true
+comments: true
 categories:
     - 基于 Heox + NexT 的 blog 搭建
 tags:

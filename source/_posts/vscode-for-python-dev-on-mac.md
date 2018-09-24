@@ -1,7 +1,9 @@
 ---
-title:      Mac 上使用 Visual Studio Code 进行 Python 开发
-date:       2018-08-12
-author:     DF
+title:  Mac 上使用 Visual Studio Code 进行 Python 开发
+date:  2018-08-12
+top:
+copyright: true
+comments: true
 categories:
     - Visual Studio Code
 tags:

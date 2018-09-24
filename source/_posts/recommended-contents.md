@@ -1,7 +1,9 @@
 ---
-top: 
 title:      一些值得推荐的内容  
 date:       2018-08-18
+top:
+copyright: false
+comments: true
 categories:
 tags:
     - 推荐

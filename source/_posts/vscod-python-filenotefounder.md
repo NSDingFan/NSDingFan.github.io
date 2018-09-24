@@ -1,6 +1,9 @@
 ---
 title:      VSCode 中使用 Python 异常报错 FileNotFoundError 的解决办法
 date:       2018-08-18
+top:
+copyright: true
+comments: true
 categories:
     - Visual Studio Code
 tags:

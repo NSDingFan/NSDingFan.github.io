@@ -1,6 +1,9 @@
 ---
 title:      我的第一篇Blog           # 标题 
 date:       2018-07-24	# 时间
+top:
+copyright: true
+comments: true
 categories:
     - 生活
 tags:								#标签

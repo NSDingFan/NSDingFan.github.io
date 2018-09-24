@@ -2,6 +2,7 @@
 title: LeetCode-189. 旋转数组 | Rotate Array
 data: 
 top: 
+copyright: true
 comments: false
 categories:
     - LeetCode

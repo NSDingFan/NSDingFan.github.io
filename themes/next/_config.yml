@@ -132,7 +132,7 @@ menu:
 # Enable/Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: true # 显示 标签/分类/归档 等的计数
+  badges: false # 显示 标签/分类/归档 等的计数
 
 # ---------------------------------------------------------------
 # Scheme Settings
@@ -339,7 +339,7 @@ related_posts:
 
 # Declare license on posts
 post_copyright:
-  enable: true
+  enable: false
   license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a>
 
 # Post edit
@@ -596,15 +596,15 @@ needmoreshare2:
     options:
       iconStyle: box
       boxForm: horizontal
-      position: bottomCenter
-      networks: Weibo,Wechat,Douban,Twitter,Facebook
+      position: topCenter
+      networks: Weibo,Wechat,Twitter,Evernote
   float:
-    enable: false
+    enable: true
     options:
       iconStyle: box
       boxForm: horizontal
       position: middleRight
-      networks: Weibo,Wechat,Douban,Twitter,Facebook
+      networks: Weibo,Wechat,Twitter,Evernote
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/

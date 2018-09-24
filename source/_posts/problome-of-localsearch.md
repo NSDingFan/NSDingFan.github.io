@@ -1,7 +1,9 @@
 ---
 title: 会对"本地搜索"功能出现影响的文本内容
 date: 2018-09-08 21:28:34
-author: DF
+top:
+copyright: true
+comments: true
 categories:
     - 基于 Heox + NexT 的 blog 搭建
 tags:

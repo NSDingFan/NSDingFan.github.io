@@ -1,7 +1,8 @@
 ---
-title: LeetCode-905. 按奇偶校验排序数组 | Sort Array By Parity 
+title: LeetCode-905. 按奇偶校验排序数组 | Sort Array By Parity | list.sort(),lambda
 data: 2018-09-19
 top: 
+copyright: true
 comments: true
 categories:
     - LeetCode
@@ -9,7 +10,6 @@ categories:
 tags:
     - LeetCode
     - Python
-    - Easy
     - Python 排序函数 list.sort() 
     - Python 匿名函数 lambda
 ---
@@ -111,7 +111,6 @@ class Solution:
 
 
 # 扩展
-## ~~解题中的问题~~
 
 ## 知识点:
 

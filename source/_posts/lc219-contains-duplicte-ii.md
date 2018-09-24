@@ -1,6 +1,9 @@
 ---
 title:      LeetCode-219.存在重复元素 II | Contains Duplicate II
 data:       2018-09-01
+top:
+copyright: true
+comments: true
 categories:
     - LeetCode
 tags:
@@ -11,7 +14,7 @@ tags:
     - Python
 ---
 
->[题目链接](https://leetcode-cn.com/problems/contains-duplicate-ii/description/)
+>[题目链接](https://leetcode-cn.com/problems/contains-duplicate-ii/)
 
 ## 题目
 

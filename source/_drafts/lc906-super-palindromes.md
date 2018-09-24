@@ -2,6 +2,7 @@
 title: LeetCode-906.超级回文数 | Super Palindromes
 data: 
 top: 
+copyright: true
 comments: false
 categories:
     - LeetCode

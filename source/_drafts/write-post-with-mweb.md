@@ -1,6 +1,9 @@
 ---
 title: 配合使用MWeb进行Blog编写
 date: 2018-09-09 04:10:07
+top:
+copyright: true
+comments: true
 categories:
     - 基于 Heox + NexT 的 blog 搭建
 tags:

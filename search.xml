@@ -9,8 +9,8 @@
         <category>Python Tips</category>
       </categories>
       <tags>
-        <tag>Python 內建函数 max()</tag>
         <tag>LeetCode-Easy</tag>
+        <tag>Python 內建函数 max()</tag>
       </tags>
   </entry>
   <entry>
@@ -36,9 +36,9 @@
       </categories>
       <tags>
         <tag>Python</tag>
+        <tag>LeetCode-Easy</tag>
         <tag>Python 排序函数 list.sort()</tag>
         <tag>Python 匿名函数 lambda</tag>
-        <tag>LeetCode-Easy</tag>
       </tags>
   </entry>
   <entry>
@@ -51,9 +51,9 @@
       </categories>
       <tags>
         <tag>Python</tag>
+        <tag>LeetCode-Easy</tag>
         <tag>Python 列表切片的总结</tag>
         <tag>Python List之间复制的总结</tag>
-        <tag>LeetCode-Easy</tag>
       </tags>
   </entry>
   <entry>
@@ -93,8 +93,8 @@
       <tags>
         <tag>Python</tag>
         <tag>贪心算法</tag>
-        <tag>LeetCode-Easy</tag>
         <tag>Python 列表解析</tag>
+        <tag>LeetCode-Easy</tag>
       </tags>
   </entry>
   <entry>
@@ -106,10 +106,10 @@
       </categories>
       <tags>
         <tag>Python</tag>
-        <tag>列表</tag>
-        <tag>哈希表</tag>
-        <tag>字典</tag>
         <tag>LeetCode-Easy</tag>
+        <tag>哈希表</tag>
+        <tag>列表</tag>
+        <tag>字典</tag>
       </tags>
   </entry>
   <entry>
@@ -134,7 +134,7 @@
       <tags>
         <tag>macOS</tag>
         <tag>推荐</tag>
-        <tag>egpu</tag>
+        <tag>eGPU</tag>
       </tags>
   </entry>
   <entry>

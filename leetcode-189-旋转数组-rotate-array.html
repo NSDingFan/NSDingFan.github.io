@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.4.1" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.4.1" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.4.1',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="题目链接  题目给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。 示例：123456输入: [1,2,3,4,5,6,7] 和 k = 3输出: [5,6,7,1,2,3,4]解释:向右旋转 1 步: [7,1,2,3,4,5,6]向右旋转 2 步: [6,7,1,2,3,4,5]向右旋转 3 步: [5,6,7,1,2,3,4]">
+<meta name="keywords" content="Python,Python 列表切片的总结,Python List之间复制的总结,LeetCode-Easy">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode-189. 旋转数组 | Rotate Array">
+<meta property="og:url" content="https://nsdf.top/leetcode-189-旋转数组-rotate-array.html">
+<meta property="og:site_name" content="DF Blog">
+<meta property="og:description" content="题目链接  题目给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。 示例：123456输入: [1,2,3,4,5,6,7] 和 k = 3输出: [5,6,7,1,2,3,4]解释:向右旋转 1 步: [7,1,2,3,4,5,6]向右旋转 2 步: [6,7,1,2,3,4,5]向右旋转 3 步: [5,6,7,1,2,3,4]">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-09-29T13:19:38.936Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LeetCode-189. 旋转数组 | Rotate Array">
+<meta name="twitter:description" content="题目链接  题目给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。 示例：123456输入: [1,2,3,4,5,6,7] 和 k = 3输出: [5,6,7,1,2,3,4]解释:向右旋转 1 步: [7,1,2,3,4,5,6]向右旋转 2 步: [6,7,1,2,3,4,5]向右旋转 3 步: [5,6,7,1,2,3,4]">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="DF Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://nsdf.top/leetcode-189-旋转数组-rotate-array.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>LeetCode-189. 旋转数组 | Rotate Array | DF Blog</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122648300-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122648300-1');
+</script>
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">DF Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Stay Hungry. Stay Foolish.</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://nsdf.top/leetcode-189-旋转数组-rotate-array.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DingFan">
+      <meta itemprop="description" content="Hi! 这里是DF<br/>一个正在成长中的程序员">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DF Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">LeetCode-189. 旋转数组 | Rotate Array
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-17 00:00:46" itemprop="dateCreated datePublished" datetime="2018-09-17T00:00:46+08:00">2018-09-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-09-29 21:19:38" itemprop="dateModified" datetime="2018-09-29T21:19:38+08:00">2018-09-29</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LeetCode/Python-Tips/" itemprop="url" rel="index"><span itemprop="name">Python Tips</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/leetcode-189-旋转数组-rotate-array.html#comments" itemprop="discussionUrl">
+                
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="leetcode-189-旋转数组-rotate-array.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p><a href="https://leetcode-cn.com/problems/rotate-array" target="_blank" rel="noopener">题目链接</a></p>
+</blockquote>
+<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。</p>
+<p><strong>示例：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">输入: [1,2,3,4,5,6,7] 和 k = 3</span><br><span class="line">输出: [5,6,7,1,2,3,4]</span><br><span class="line">解释:</span><br><span class="line">向右旋转 1 步: [7,1,2,3,4,5,6]</span><br><span class="line">向右旋转 2 步: [6,7,1,2,3,4,5]</span><br><span class="line">向右旋转 3 步: [5,6,7,1,2,3,4]</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>说明:<br>尽可能想出更多的解决方案，至少有三种不同的方法可以解决这个问题。<br>要求使用空间复杂度为 O(1) 的原地算法。</p>
+<h2 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h2><h3 id="分析-amp-思路"><a href="#分析-amp-思路" class="headerlink" title="分析 &amp; 思路"></a>分析 &amp; 思路</h3><p>题目为把数组向右移动k个位置，其实就相当于将数组的最后一个元素移动至数组首位，循环k次。同时由于题中没有给定k和nums的长度，所以要考虑到这两者长度的问题以及关系：</p>
+<ul>
+<li>k = 0</li>
+<li>len(nums) &lt;=1</li>
+<li>k &gt; len(nums)<br>当 k 大于数组的长度时，如果直接循环，多循环的几轮是没有意义的，所以只需要循环 k%len(nums) 次即可。 同时，由于是不断的将数组末端的值放至数组前端，所以也就是将数组末尾的k个值拼接到剩余元素的前端。</li>
+</ul>
+<p>通过以上思路，有两种方式：</p>
+<ol>
+<li>循环</li>
+<li>利用切片进行修改</li>
+</ol>
+<hr>
+<p>第三种思路是直接对数组通过三次翻转来解决，首先将整个数组翻转, 然后将需要前k个元素进行翻转，然后将剩下的部分翻转，这样也相当于完成了k个位置的循环。同样，这里也要考虑k大于数组长度的问题。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">输入: [1, 2, 3, 4, 5, 6, 7] 和 k = 3</span><br><span class="line">输出: [5, 6, 7, 1, 2, 3, 4]</span><br><span class="line"></span><br><span class="line">翻转整个列表: [7, 6, 5, 4, 3, 2, 1]</span><br><span class="line">将前k个元素翻转: [5, 6, 7, 4, 3, 2, 1]</span><br><span class="line">将剩余元素翻转: [5, 6, 7, 1, 2, 3, 4]</span><br></pre></td></tr></table></figure>
+<p>翻转整个列表，可以使用python内置的reverse函数解决。翻转部分列表，需要自定义一个函数。</p>
+<h3 id="方式一-循环-："><a href="#方式一-循环-：" class="headerlink" title="方式一(循环)："></a>方式一(循环)：</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">rotate</span><span class="params">(self, nums, k)</span>:</span></span><br><span class="line">        length = len(nums)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(k % length):</span><br><span class="line">            nums.insert(<span class="number">0</span>,nums[-(i+<span class="number">1</span>)])</span><br><span class="line">        nums[:] = nums[:length]</span><br></pre></td></tr></table></figure>
+<h3 id="方式二-切片-："><a href="#方式二-切片-：" class="headerlink" title="方式二(切片)："></a>方式二(切片)：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">rotate</span><span class="params">(self, nums, k)</span>:</span></span><br><span class="line">        length = len(nums)</span><br><span class="line">        i = k % length</span><br><span class="line">        nums[:] = nums[-i:] + nums[:-i]</span><br></pre></td></tr></table></figure>
+<h3 id="方式三-翻转部分元素-："><a href="#方式三-翻转部分元素-：" class="headerlink" title="方式三(翻转部分元素)："></a>方式三(翻转部分元素)：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">rotate</span><span class="params">(self, nums, k)</span>:</span></span><br><span class="line">        k %= len(nums)</span><br><span class="line">        nums.reverse()</span><br><span class="line">        self.reverse(nums, <span class="number">0</span>, k - <span class="number">1</span>)</span><br><span class="line">        self.reverse(nums, k, len(nums) - <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">reverse</span><span class="params">(self, nums, start, end)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        nums: list</span></span><br><span class="line"><span class="string">        start: int</span></span><br><span class="line"><span class="string">        end: int</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        <span class="keyword">while</span> start &lt; end:</span><br><span class="line">            temp = nums[end]</span><br><span class="line">            nums[end] = nums[start]</span><br><span class="line">            nums[start] = temp</span><br><span class="line">            start += <span class="number">1</span></span><br><span class="line">            end -= <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><h3 id="解题中出现的问题："><a href="#解题中出现的问题：" class="headerlink" title="解题中出现的问题："></a>解题中出现的问题：</h3><ol>
+<li><p>关于list的值传递和地址传递<br> 由于自己的生疏，错误的使用了传地址的方式给list赋值，导致修改了list所指向的内存，而不是修改了原本所指内存的内容，所以出现了无法修改函数外传入的数组 这样的问题。</p>
+</li>
+<li><p>关于 k &gt; len(nums) 情况的处理：</p>
+<ul>
+<li><p>开始考虑过：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> len(nums) &lt; k:</span><br><span class="line">	k = k - len(nums)</span><br></pre></td></tr></table></figure>
+<p>  这样存在问题: k 可能会大于 length 很多倍。</p>
+<blockquote>
+<p>经过分析，这种方式并不妥当。例如当<code>nums = [1,2] k = 5</code>时，就会出现问题，预期结果为<code>[2,1]</code>，而实际结果为<code>[1,2]</code>。</p>
+<p>但是在我试着这种方式提交后，显示提交答案通过，在查看其它通过的结果中也有相似的操作。这个应该是LeetCode测试用例不完善出现的问题。</p>
+</blockquote>
+</li>
+<li><p>通过循环解决：<br>  就是上面的判断丢在循环里。同时加上了 <code>if k != 0 and len(nums) &gt; 1 and k != len(nums)</code> 这样的判断。</p>
+<blockquote>
+<p>这种方式可行，但是并不是最优解。</p>
+</blockquote>
+</li>
+<li>直接利用求余运算<code>%</code>解决：  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">length = len(nums)</span><br><span class="line">       i = k % length</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="知识点："><a href="#知识点：" class="headerlink" title="知识点："></a>知识点：</h3><h4 id="1-Python-列表切片的总结："><a href="#1-Python-列表切片的总结：" class="headerlink" title="1. Python 列表切片的总结："></a>1. Python 列表切片的总结：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class slice(start, stop[, step])</span><br></pre></td></tr></table></figure>
+<h5 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h5><ol>
+<li>关于回文素数的题目，生成回文数中有进行使用</li>
+<li><a href="https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/0013868196352269f28f1f00aee485ea27e3c4e47f12bc7000" target="_blank" rel="noopener">廖雪峰Python教程</a></li>
+<li><a href="https://docs.python.org/3.6/library/functions.html?highlight=slice#slice" target="_blank" rel="noopener">官方文档</a></li>
+</ol>
+<h5 id="切片初步："><a href="#切片初步：" class="headerlink" title="切片初步："></a>切片初步：</h5><p>切片 <code>list[x:y]</code> 范围为 x 到 y-1. 若未指定 x, 则默认x为0. 若未指定x或y, 则默认为获取第x个元素之后的所有元素或者前y个元素. 切片也可在 for 中进行使用.</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">L = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line">print(L[<span class="number">0</span>:<span class="number">2</span>]) <span class="comment"># 获取list中前两个元素.</span></span><br><span class="line">print(L[:<span class="number">2</span>])</span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># [1, 2]</span></span><br><span class="line"><span class="comment"># [1, 2]</span></span><br><span class="line"></span><br><span class="line">print(L[<span class="number">2</span>:]) <span class="comment"># 获取list中第二个元素后的所有元素.</span></span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># [3, 4, 5]</span></span><br></pre></td></tr></table></figure>
+<p>x 或者 y 可以为正整数或者负整数。当为负时，表示列表的倒数第n个元素。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">L = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line">print(L[:<span class="number">-2</span>]) <span class="comment"># 获取列表倒数第二个元素以前的所有元素</span></span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># [1, 2, 3]</span></span><br><span class="line"></span><br><span class="line">print(L[<span class="number">-3</span>:<span class="number">-1</span>]) <span class="comment"># 获取倒数第三个元素到倒数第一个元素以前的元素</span></span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># [3, 4]</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意：默认情况下，x 必须要小于 y。</p>
+</blockquote>
+<h5 id="切片进阶："><a href="#切片进阶：" class="headerlink" title="切片进阶："></a>切片进阶：</h5><p>切片<code>list[x:y:z]</code>方法还有第三个参数z，用于指定步长。步长可以为正或者负。当步长为负时，需要 x 大于 y。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">L = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line">print(L[::<span class="number">-1</span>]) <span class="comment"># 获取L所有元素的倒序结果</span></span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># [5, 4, 3, 2, 1]</span></span><br><span class="line"></span><br><span class="line">print(L[<span class="number">2</span>:<span class="number">5</span>:<span class="number">-1</span>])</span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># []</span></span><br><span class="line"></span><br><span class="line">print(L[:<span class="number">-4</span>:<span class="number">-1</span>]) <span class="comment"># 获取从列表开头到倒数第四个元素之间的元素</span></span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># [5, 4, 3]</span></span><br><span class="line"></span><br><span class="line">print(L[::<span class="number">2</span>])</span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># [1, 3, 5]</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-Python中的List之间复制的总结"><a href="#2-Python中的List之间复制的总结" class="headerlink" title="2. Python中的List之间复制的总结"></a>2. Python中的List之间复制的总结</h4><h5 id="1-修改地址："><a href="#1-修改地址：" class="headerlink" title="1. 修改地址："></a>1. 修改地址：</h5><p>直接使用“<code>=</code>”进行赋值，会进行地址传递，例如<code>listB=listA</code>，就是将<code>listA</code>的地址传给了<code>listB</code>，对<code>listB</code>的地址进行的修改。这里的<code>listB</code>，无论是空还是非空，结果都是一样的。<strong>这时无论是对<code>listA</code>还是<code>listB</code>进行修改，都是对同一块内存进行修改。</strong></p>
+<p>如果不想将<code>listA</code>的地址传递给<code>listB</code>，只想将<code>listA</code>的值传递给<code>listB</code>，则可以通过<code>listB=listA[:]</code>这样的方式解决。这样的操作，<strong>就是首先将<code>listA</code>的内容复制一份，然后将这个复制的内容的地址给到<code>listB</code>，这时<code>listA</code>和<code>listB</code>就指向了各自的地址，不会相互影响了。</strong></p>
+<h6 id="首先看一下上面两种赋值方式，listA和listB的地址："><a href="#首先看一下上面两种赋值方式，listA和listB的地址：" class="headerlink" title="首先看一下上面两种赋值方式，listA和listB的地址："></a>首先看一下上面两种赋值方式，listA和listB的地址：</h6><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">print(id(listA))</span><br><span class="line">listB = listA</span><br><span class="line">print(id(listB))</span><br><span class="line">listB = listA[:]</span><br><span class="line">print(id(listB))</span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># 4557213320</span></span><br><span class="line"><span class="comment"># 4557213320</span></span><br><span class="line"><span class="comment"># 4558224264</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>显然，<code>listB = listA</code>只是地址的传递，而<code>listB=listA[:]</code>则是将<code>listA</code>的内容复制一份后，将复制内容的地址传给了<code>listB</code>。</p>
+</blockquote>
+<h6 id="1-1-listA-listB的例子："><a href="#1-1-listA-listB的例子：" class="headerlink" title="1.1 listA = listB的例子："></a>1.1 <code>listA = listB</code>的例子：</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">listA = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 建立B的同时将A地址传给B</span></span><br><span class="line">listB = listA</span><br><span class="line">listA.append(<span class="number">233</span>)</span><br><span class="line">print(listB)</span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># [1, 2, 3, 233]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 先建立B，然后再将A地址传递给B</span></span><br><span class="line">listB = []</span><br><span class="line">listB = listA </span><br><span class="line">listA.append(<span class="number">233</span>)</span><br><span class="line">print(listB)</span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># [1, 2, 3, 233]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 先建立B并赋值,然后将A的地址传给B</span></span><br><span class="line">listB = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line">listB = listA</span><br><span class="line">listA.append(<span class="number">233</span>)</span><br><span class="line">print(listB)</span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># [1, 2, 3, 233]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这里先将A的地址赋给了B, 然后通过=,又将[4,5,6]的地址赋给了A</span></span><br><span class="line">listB = listA</span><br><span class="line">listA = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>] </span><br><span class="line">print(listA)</span><br><span class="line">print(listB)</span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># [4, 5, 6]</span></span><br><span class="line"><span class="comment"># [1, 2, 3]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">listC = listB = listA</span><br><span class="line">listC.append(<span class="number">1234</span>)</span><br><span class="line">print(listA)</span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># [1, 2, 3, 1234]</span></span><br></pre></td></tr></table></figure>
+<h6 id="1-2-listB-listA-的例子："><a href="#1-2-listB-listA-的例子：" class="headerlink" title="1.2 listB = listA[:] 的例子："></a>1.2 <code>listB = listA[:]</code> 的例子：</h6><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">listA = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">listB = listA[:] <span class="comment"># 将A的内容复制一份，给到B</span></span><br><span class="line">listA.append(<span class="number">233</span>)</span><br><span class="line">print(listB)</span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># [1, 2, 3]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">listB = []</span><br><span class="line">listB = listA[:]</span><br><span class="line">listA.append(<span class="number">233</span>)</span><br><span class="line">print(listB)</span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># [1, 2, 3]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">listB = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line">listB = listA[:]</span><br><span class="line">listA.append(<span class="number">233</span>)</span><br><span class="line">print(listB)</span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># [1, 2, 3]</span></span><br></pre></td></tr></table></figure>
+<h5 id="2-修改内存："><a href="#2-修改内存：" class="headerlink" title="2. 修改内存："></a>2. 修改内存：</h5><p>如果只是想要修改<code>listB</code>的内存，而不是需改其所指向内存。就需要通过<code>listB[:] = listA</code> 来实现。注意：这里的<code>listB</code>需要先进行定义，因为没法给一个不存在的地址进行赋值╮(╯▽╰)╭</p>
+<h6 id="各种赋值方式的结果和地址："><a href="#各种赋值方式的结果和地址：" class="headerlink" title="各种赋值方式的结果和地址："></a>各种赋值方式的结果和地址：</h6><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">listA = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">listB = []</span><br><span class="line">print(<span class="string">"A: "</span> + str(listA))</span><br><span class="line">print(<span class="string">"B: "</span> + str(listB))</span><br><span class="line">print(<span class="string">"id of A: "</span> + str(id(listA)))</span><br><span class="line">print(<span class="string">"id of B: "</span> + str(id(listB)))</span><br><span class="line"></span><br><span class="line">print(<span class="string">"\n---1---\nlistB[:] = listA"</span>)</span><br><span class="line">listB[:] = listA</span><br><span class="line">print(<span class="string">"id of B: "</span> + str(id(listB)))</span><br><span class="line">print(<span class="string">"B: "</span> + str(listB))</span><br><span class="line"></span><br><span class="line">print(<span class="string">"\n---2---\nlistB[:] = listA[:]"</span>)</span><br><span class="line">listB[:] = listA[:]</span><br><span class="line">print(<span class="string">"id of B: "</span> + str(id(listB)))</span><br><span class="line">print(<span class="string">"B: "</span> + str(listB))</span><br><span class="line"></span><br><span class="line">print(<span class="string">"\n---3---\nlistB = listA"</span>)</span><br><span class="line">listB = listA</span><br><span class="line">print(<span class="string">"id of B: "</span> + str(id(listB)))</span><br><span class="line">print(<span class="string">"B: "</span> + str(listB))</span><br><span class="line"></span><br><span class="line">print(<span class="string">"\n---4---\nlistB = listA[:]"</span>)</span><br><span class="line">listB = listA[:]</span><br><span class="line">print(<span class="string">"id of B: "</span> + str(id(listB)))</span><br><span class="line">print(<span class="string">"B: "</span> + str(listB))</span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># --结果--</span></span><br><span class="line">A: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">B: []</span><br><span class="line">id of A: <span class="number">4390356616</span></span><br><span class="line">id of B: <span class="number">4390356744</span></span><br><span class="line"></span><br><span class="line">--<span class="number">-1</span>---</span><br><span class="line">listB[:] = listA</span><br><span class="line">id of B: <span class="number">4390356744</span></span><br><span class="line">B: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"></span><br><span class="line">--<span class="number">-2</span>---</span><br><span class="line">listB[:] = listA[:]</span><br><span class="line">id of B: <span class="number">4390356744</span></span><br><span class="line">B: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"></span><br><span class="line">--<span class="number">-3</span>---</span><br><span class="line">listB = listA</span><br><span class="line">id of B: <span class="number">4390356616</span></span><br><span class="line">B: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"></span><br><span class="line">--<span class="number">-4</span>---</span><br><span class="line">listB = listA[:]</span><br><span class="line">id of B: <span class="number">4390384200</span></span><br><span class="line">B: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
+<h5 id="3-在函数中修改："><a href="#3-在函数中修改：" class="headerlink" title="3. 在函数中修改："></a>3. 在函数中修改：</h5><p>要通过函数对一个函数外的list进行修改，就必须使用 <code>listB[:] = listA</code> 这种方式，修改list所指向内存的值。</p>
+<h6 id="3-1-通过-listB-listA-的方式："><a href="#3-1-通过-listB-listA-的方式：" class="headerlink" title="3.1 通过 listB[:] = listA 的方式："></a>3.1 通过 <code>listB[:] = listA</code> 的方式：</h6><p>所以如果需要通过函数对一个list进行修改，就需要通过 <code>listB[:] = listA</code> 这样的方式实现。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">listB = []</span><br><span class="line">print(<span class="string">"B: "</span> + str(listB))</span><br><span class="line">print(<span class="string">"id of B: "</span> + str(id(listB)) + <span class="string">"\n"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">changeB</span><span class="params">(listX)</span>:</span></span><br><span class="line">    print(<span class="string">"in function:"</span>)</span><br><span class="line">    print(<span class="string">"listX in func: "</span> + str(listX))</span><br><span class="line">    print(<span class="string">"id of listX in func: "</span> + str(id(listX)))</span><br><span class="line">    listA = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">    print(<span class="string">"listA in func: "</span> + str(listA))</span><br><span class="line">    print(<span class="string">"id of listA in func: "</span> + str(id(listA)))</span><br><span class="line">    listX[:] = listA <span class="comment"># 这里只修改listX所指向内存的值</span></span><br><span class="line">    print(<span class="string">"listX in func: "</span> + str(listX))</span><br><span class="line">    print(<span class="string">"id of listX in func: "</span> + str(id(listX)) + <span class="string">"\n"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">changeB(listB)</span><br><span class="line">print(<span class="string">"B: "</span> + str(listB))</span><br><span class="line">print(<span class="string">"id of B: "</span> + str(id(listB)))</span><br><span class="line"></span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># B: []</span></span><br><span class="line"><span class="comment"># id of B: 4331075080</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># in function:</span></span><br><span class="line"><span class="comment"># listX in func: []</span></span><br><span class="line"><span class="comment"># id of listX in func: 4331075080</span></span><br><span class="line"><span class="comment"># listA in func: [1, 2, 3]</span></span><br><span class="line"><span class="comment"># id of listA in func: 4331102408</span></span><br><span class="line"><span class="comment"># listX in func: [1, 2, 3]</span></span><br><span class="line"><span class="comment"># id of listX in func: 4331075080</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># B: [1, 2, 3]</span></span><br><span class="line"><span class="comment"># id of B: 4331075080</span></span><br></pre></td></tr></table></figure>
+<h6 id="3-2-通过-listB-listA的方式"><a href="#3-2-通过-listB-listA的方式" class="headerlink" title="3.2 通过 listB = listA的方式:"></a>3.2 通过 <code>listB = listA</code>的方式:</h6><p>因为函数中的变量指向的内存在函数执行完毕后，会被释放，也就是说函数内变量的作用域只在函数内。<strong>所以不能通过 <code>listB = listA</code> 将函数中的list的地址传递给函数外的变量。注：同理，<code>listB = listA[:]</code> 这种方式，也不可以。</strong></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">listB = []</span><br><span class="line">print(<span class="string">"B: "</span> + str(listB))</span><br><span class="line">print(<span class="string">"id of B: "</span> + str(id(listB)) + <span class="string">"\n"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">changeB</span><span class="params">(listX)</span>:</span></span><br><span class="line">    print(<span class="string">"in function:"</span>)</span><br><span class="line">    print(<span class="string">"listX in func: "</span> + str(listX))</span><br><span class="line">    print(<span class="string">"id of listX in func: "</span> + str(id(listX)))</span><br><span class="line">    listA = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">    print(<span class="string">"listA in func: "</span> + str(listA))</span><br><span class="line">    print(<span class="string">"id of listA in func: "</span> + str(id(listA)))</span><br><span class="line">    listX = listA</span><br><span class="line">    print(<span class="string">"listX in func: "</span> + str(listX))</span><br><span class="line">    print(<span class="string">"id of listX in func: "</span> + str(id(listX)) + <span class="string">"\n"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">changeB(listB)</span><br><span class="line">print(<span class="string">"B: "</span> + str(listB))</span><br><span class="line">print(<span class="string">"id of B: "</span> + str(id(listB)))</span><br><span class="line"></span><br><span class="line"><span class="comment"># --结果--</span></span><br><span class="line"><span class="comment"># B: []</span></span><br><span class="line"><span class="comment"># id of B: 4385576456</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># in function:</span></span><br><span class="line"><span class="comment"># listX in func: []</span></span><br><span class="line"><span class="comment"># id of listX in func: 4385576456</span></span><br><span class="line"><span class="comment"># listA in func: [1, 2, 3]</span></span><br><span class="line"><span class="comment"># id of listA in func: 4385578696</span></span><br><span class="line"><span class="comment"># listX in func: [1, 2, 3]</span></span><br><span class="line"><span class="comment"># id of listX in func: 4385578696</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># B: []</span></span><br><span class="line"><span class="comment"># id of B: 4385576456</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+
+    
+    
+    
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+
+  <p><span>本文标题:</span>LeetCode-189. 旋转数组 | Rotate Array</a></p>
+  <p><span>文章作者:</span>DingFan</a></p>
+  <p><span>发布时间:</span>2018年09月17日 - 00:00:46</p>
+  <p><span>最后更新:</span>2018年09月29日 - 21:19:38</p>
+  <p><span>原始链接:</span><a href="/leetcode-189-旋转数组-rotate-array.html" title="LeetCode-189. 旋转数组 | Rotate Array">https://nsdf.top/leetcode-189-旋转数组-rotate-array.html</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://nsdf.top/leetcode-189-旋转数组-rotate-array.html"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
+      
+    </div>
+    
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+            <a href="/tags/Python-列表切片的总结/" rel="tag"># Python 列表切片的总结</a>
+          
+            <a href="/tags/Python-List之间复制的总结/" rel="tag"># Python List之间复制的总结</a>
+          
+            <a href="/tags/LeetCode-Easy/" rel="tag"># LeetCode-Easy</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+               <div id="needsharebutton-postbottom">
+                 <span class="btn">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                 </span>
+               </div>
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/会对-本地搜索-功能出现影响的文本内容.html" rel="next" title="会对"本地搜索"功能出现影响的文本内容">
+                <i class="fa fa-chevron-left"></i> 会对"本地搜索"功能出现影响的文本内容
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/leetcode-905-按奇偶校验排序数组-sort-array-by-parity-list-sort-lambda.html" rel="prev" title="LeetCode-905. 按奇偶校验排序数组 | Sort Array By Parity | list.sort(),lambda">
+                LeetCode-905. 按奇偶校验排序数组 | Sort Array By Parity | list.sort(),lambda <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="DingFan" />
+            
+              <p class="site-author-name" itemprop="name">DingFan</p>
+              <p class="site-description motion-element" itemprop="description">Hi! 这里是DF<br/>一个正在成长中的程序员</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">35</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/NSDingFan" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:df_works@163.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://weibo.com/u/6590783493" target="_blank" title="微博"><i class="fa fa-fw fa-weibo"></i>微博</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://www.zhihu.com/people/ding-fan-7-27" target="_blank" title="知乎"><i class="fa fa-fw fa-globe"></i>知乎</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.jianshu.com/u/272faf29687d" target="_blank" title="简书"><i class="fa fa-fw fa-book"></i>简书</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://ourcoders.com/" title="OurCoders" target="_blank">OurCoders</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://coolshell.cn/" title="CoolShell" target="_blank">CoolShell</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解答"><span class="nav-number">2.</span> <span class="nav-text">解答</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#分析-amp-思路"><span class="nav-number">2.1.</span> <span class="nav-text">分析 &amp; 思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方式一-循环-："><span class="nav-number">2.2.</span> <span class="nav-text">方式一(循环)：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方式二-切片-："><span class="nav-number">2.3.</span> <span class="nav-text">方式二(切片)：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方式三-翻转部分元素-："><span class="nav-number">2.4.</span> <span class="nav-text">方式三(翻转部分元素)：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展"><span class="nav-number">3.</span> <span class="nav-text">扩展</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解题中出现的问题："><span class="nav-number">3.1.</span> <span class="nav-text">解题中出现的问题：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#知识点："><span class="nav-number">3.2.</span> <span class="nav-text">知识点：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Python-列表切片的总结："><span class="nav-number">3.2.1.</span> <span class="nav-text">1. Python 列表切片的总结：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#参考："><span class="nav-number">3.2.1.1.</span> <span class="nav-text">参考：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#切片初步："><span class="nav-number">3.2.1.2.</span> <span class="nav-text">切片初步：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#切片进阶："><span class="nav-number">3.2.1.3.</span> <span class="nav-text">切片进阶：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Python中的List之间复制的总结"><span class="nav-number">3.2.2.</span> <span class="nav-text">2. Python中的List之间复制的总结</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-修改地址："><span class="nav-number">3.2.2.1.</span> <span class="nav-text">1. 修改地址：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#首先看一下上面两种赋值方式，listA和listB的地址："><span class="nav-number">3.2.2.1.1.</span> <span class="nav-text">首先看一下上面两种赋值方式，listA和listB的地址：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#1-1-listA-listB的例子："><span class="nav-number">3.2.2.1.2.</span> <span class="nav-text">1.1 listA = listB的例子：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#1-2-listB-listA-的例子："><span class="nav-number">3.2.2.1.3.</span> <span class="nav-text">1.2 listB = listA[:] 的例子：</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-修改内存："><span class="nav-number">3.2.2.2.</span> <span class="nav-text">2. 修改内存：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#各种赋值方式的结果和地址："><span class="nav-number">3.2.2.2.1.</span> <span class="nav-text">各种赋值方式的结果和地址：</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-在函数中修改："><span class="nav-number">3.2.2.3.</span> <span class="nav-text">3. 在函数中修改：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#3-1-通过-listB-listA-的方式："><span class="nav-number">3.2.2.3.1.</span> <span class="nav-text">3.1 通过 listB[:] = listA 的方式：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-2-通过-listB-listA的方式"><span class="nav-number">3.2.2.3.2.</span> <span class="nav-text">3.2 通过 listB = listA的方式:</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">DingFan</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.4.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.1"></script>
+
+
+
+  
+
+  
+    <script id="dsq-count-scr" src="https://nsdingfan.disqus.com/count.js" async></script>
+  
+
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'https://nsdf.top/leetcode-189-旋转数组-rotate-array.html';
+        this.page.identifier = 'leetcode-189-旋转数组-rotate-array.html';
+        this.page.title = 'LeetCode-189. 旋转数组 | Rotate Array';
+        };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://nsdingfan.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        loadComments();
+      
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "topCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Twitter,Evernote";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Twitter,Evernote";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=6.4.1"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=6.4.1"></script>
+
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"react":{"opacityDefault":1},"model":{"jsonPath":"/live2dw/assets/xiaomai.model.json"},"display":{"position":"right","opacityDefault":1,"width":100,"height":160},"mobile":{"show":false}});</script></body>
+</html>

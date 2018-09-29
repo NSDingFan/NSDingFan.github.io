@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://nsdf.top/"/>
-  <updated>2018-09-24T13:10:18.052Z</updated>
+  <updated>2018-09-29T13:11:57.006Z</updated>
   <id>https://nsdf.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://nsdf.top/leetcode-908-%E6%9C%80%E5%B0%8F%E5%B7%AE%E5%80%BC-i-smallest-range-i-max.html"/>
     <id>https://nsdf.top/leetcode-908-最小差值-i-smallest-range-i-max.html</id>
     <published>2018-09-24T06:51:23.777Z</published>
-    <updated>2018-09-24T13:10:18.052Z</updated>
+    <updated>2018-09-29T13:11:57.006Z</updated>
     
     <summary type="html">
     
@@ -40,9 +40,9 @@
       <category term="Python Tips" scheme="https://nsdf.top/categories/LeetCode/Python-Tips/"/>
     
     
-      <category term="LeetCode" scheme="https://nsdf.top/tags/LeetCode/"/>
-    
       <category term="Python 內建函数 max()" scheme="https://nsdf.top/tags/Python-%E5%85%A7%E5%BB%BA%E5%87%BD%E6%95%B0-max/"/>
+    
+      <category term="LeetCode-Easy" scheme="https://nsdf.top/tags/LeetCode-Easy/"/>
     
   </entry>
   
@@ -79,7 +79,7 @@
     <link href="https://nsdf.top/leetcode-905-%E6%8C%89%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84-sort-array-by-parity-list-sort-lambda.html"/>
     <id>https://nsdf.top/leetcode-905-按奇偶校验排序数组-sort-array-by-parity-list-sort-lambda.html</id>
     <published>2018-09-16T16:03:30.768Z</published>
-    <updated>2018-09-24T09:40:53.937Z</updated>
+    <updated>2018-09-29T13:12:22.871Z</updated>
     
     <summary type="html">
     
@@ -103,13 +103,45 @@
       <category term="Python Tips" scheme="https://nsdf.top/categories/LeetCode/Python-Tips/"/>
     
     
-      <category term="LeetCode" scheme="https://nsdf.top/tags/LeetCode/"/>
-    
       <category term="Python" scheme="https://nsdf.top/tags/Python/"/>
     
       <category term="Python 排序函数 list.sort()" scheme="https://nsdf.top/tags/Python-%E6%8E%92%E5%BA%8F%E5%87%BD%E6%95%B0-list-sort/"/>
     
       <category term="Python 匿名函数 lambda" scheme="https://nsdf.top/tags/Python-%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0-lambda/"/>
+    
+      <category term="LeetCode-Easy" scheme="https://nsdf.top/tags/LeetCode-Easy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode-189. 旋转数组 | Rotate Array</title>
+    <link href="https://nsdf.top/leetcode-189-%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84-rotate-array.html"/>
+    <id>https://nsdf.top/leetcode-189-旋转数组-rotate-array.html</id>
+    <published>2018-09-16T16:00:46.502Z</published>
+    <updated>2018-09-29T13:19:38.936Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/rotate-array&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h2&gt;&lt;p&gt;给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;输入: [1,2,3,4,5,6,7] 和 k = 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输出: [5,6,7,1,2,3,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;解释:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;向右旋转 1 步: [7,1,2,3,4,5,6]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;向右旋转 2 步: [6,7,1,2,3,4,5]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;向右旋转 3 步: [5,6,7,1,2,3,4]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="https://nsdf.top/categories/LeetCode/"/>
+    
+      <category term="Python Tips" scheme="https://nsdf.top/categories/LeetCode/Python-Tips/"/>
+    
+    
+      <category term="Python" scheme="https://nsdf.top/tags/Python/"/>
+    
+      <category term="Python 列表切片的总结" scheme="https://nsdf.top/tags/Python-%E5%88%97%E8%A1%A8%E5%88%87%E7%89%87%E7%9A%84%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="Python List之间复制的总结" scheme="https://nsdf.top/tags/Python-List%E4%B9%8B%E9%97%B4%E5%A4%8D%E5%88%B6%E7%9A%84%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="LeetCode-Easy" scheme="https://nsdf.top/tags/LeetCode-Easy/"/>
     
   </entry>
   
@@ -174,7 +206,7 @@
     <link href="https://nsdf.top/leetcode-122-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA-ii-best-time-to-buy-and-sell-stock-ii-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95-%E5%88%97%E8%A1%A8%E8%A7%A3%E6%9E%90.html"/>
     <id>https://nsdf.top/leetcode-122-买卖股票的最佳时机-ii-best-time-to-buy-and-sell-stock-ii-贪心算法-列表解析.html</id>
     <published>2018-09-02T18:35:15.656Z</published>
-    <updated>2018-09-24T09:40:29.452Z</updated>
+    <updated>2018-09-29T13:11:42.380Z</updated>
     
     <summary type="html">
     
@@ -193,15 +225,13 @@
       <category term="Python Tips" scheme="https://nsdf.top/categories/LeetCode/Python-Tips/"/>
     
     
-      <category term="LeetCode" scheme="https://nsdf.top/tags/LeetCode/"/>
-    
       <category term="Python" scheme="https://nsdf.top/tags/Python/"/>
     
       <category term="贪心算法" scheme="https://nsdf.top/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
     
-      <category term="列表" scheme="https://nsdf.top/tags/%E5%88%97%E8%A1%A8/"/>
+      <category term="LeetCode-Easy" scheme="https://nsdf.top/tags/LeetCode-Easy/"/>
     
-      <category term="列表解析" scheme="https://nsdf.top/tags/%E5%88%97%E8%A1%A8%E8%A7%A3%E6%9E%90/"/>
+      <category term="Python 列表解析" scheme="https://nsdf.top/tags/Python-%E5%88%97%E8%A1%A8%E8%A7%A3%E6%9E%90/"/>
     
   </entry>
   
@@ -210,7 +240,7 @@
     <link href="https://nsdf.top/leetcode-219-%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0-ii-contains-duplicate-ii.html"/>
     <id>https://nsdf.top/leetcode-219-存在重复元素-ii-contains-duplicate-ii.html</id>
     <published>2018-09-02T18:33:33.258Z</published>
-    <updated>2018-09-24T09:42:01.278Z</updated>
+    <updated>2018-09-29T13:12:20.838Z</updated>
     
     <summary type="html">
     
@@ -226,8 +256,6 @@
       <category term="LeetCode" scheme="https://nsdf.top/categories/LeetCode/"/>
     
     
-      <category term="LeetCode" scheme="https://nsdf.top/tags/LeetCode/"/>
-    
       <category term="Python" scheme="https://nsdf.top/tags/Python/"/>
     
       <category term="列表" scheme="https://nsdf.top/tags/%E5%88%97%E8%A1%A8/"/>
@@ -235,6 +263,8 @@
       <category term="哈希表" scheme="https://nsdf.top/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
     
       <category term="字典" scheme="https://nsdf.top/tags/%E5%AD%97%E5%85%B8/"/>
+    
+      <category term="LeetCode-Easy" scheme="https://nsdf.top/tags/LeetCode-Easy/"/>
     
   </entry>
   

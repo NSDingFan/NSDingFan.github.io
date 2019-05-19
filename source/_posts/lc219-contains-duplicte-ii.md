@@ -7,11 +7,11 @@ comments: true
 categories:
     - LeetCode
 tags:
-    - LeetCode
     - 哈希表
     - 列表
     - 字典
     - Python
+    - LeetCode-Easy
 ---
 
 >[题目链接](https://leetcode-cn.com/problems/contains-duplicate-ii/)
@@ -103,7 +103,6 @@ class Solution:
 ### 方法二：
 
 通过使用字典来解决问题,用key存nums[i]的值,value寸nums[i]的索引
-
 
 ```python
 class Solution:

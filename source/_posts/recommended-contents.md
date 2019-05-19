@@ -7,8 +7,8 @@ comments: true
 categories:
 tags:
     - 推荐
+    - eGPU Mac外置显卡
     - macOS
-    - egpu
 ---
 
 # macOS

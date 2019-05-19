@@ -8,11 +8,10 @@ categories:
     - LeetCode
     - Python Tips
 tags:
-    - LeetCode
     - 贪心算法
-    - 列表
-    - 列表解析
+    - Python 列表解析
     - Python
+    - LeetCode-Easy
 ---
 
 > [题目链接](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)

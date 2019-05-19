@@ -8,10 +8,10 @@ categories:
     - LeetCode
     - Python Tips
 tags:
-    - LeetCode
     - Python
     - Python 排序函数 list.sort() 
     - Python 匿名函数 lambda
+    - LeetCode-Easy
 ---
 
 > [题目链接](https://leetcode-cn.com/problems/sort-array-by-parity/)

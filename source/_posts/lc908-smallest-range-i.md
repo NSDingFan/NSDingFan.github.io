@@ -8,7 +8,7 @@ categories:
     - LeetCode
     - Python Tips
 tags:
-    - LeetCode
+    - LeetCode-Easy
     - Python 內建函数 max()
 ---
 

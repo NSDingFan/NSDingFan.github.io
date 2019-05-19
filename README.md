@@ -80,3 +80,8 @@ My personal blog with Hexo &amp; NexT
 
 - 2018年09月12日22:42:09 调整canvas动画
  路径: /Users/DF/Documents/GitHub/NSDingFan.github.io/themes/next/source/lib/canvas-nest/canvas-nest.min.js
+ 
+ 
+# 2019年05月20日
+
+- 莫名其妙鸽了一年, 有点心累. 重新捡起来. 

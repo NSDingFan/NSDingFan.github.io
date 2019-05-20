@@ -1,6 +1,29 @@
 # NSDingFan.github.io
 My personal blog with Hexo &amp; NexT
 
+## 如果哪天咕了, 方便回坑时候快速上手
+
+### 几个基本的指令:
+
+首先, 在终端中切换到blog的本地路径, 然后通过:
+
+- `hexo s` 或者 `hexo serve` 来运行本地服务器
+    - 通过添加 `--drafts` 来预览草稿内容
+        - `hexo s --drafts`
+- `hexo clean` 清理本地文件
+    - 会删除数据库和publish文件夹
+- `hexo g` 或者 `hexo generate
+` 生成静态文件
+- `hexo d` 或者 `hexo deploy` 进行部署
+- 使用 `$ hexo g -d` 或者 `$ hexo d -g` 在生成后自动部署
+        
+### 动手写个post
+- font-matter 部分
+- 内容
+    - 图片 ![]()
+    - `<!-- more -->` 标签控制文章在首页的显示范围
+    - 视频插入参考 [自己的这个帖子](https://nsdf.top/%E9%80%9A%E8%BF%87markdown%E7%BC%96%E5%86%99blog%E8%BF%9B%E9%98%B6%E6%8A%80%E5%B7%A7.html)
+
 # 建站时间轴
 
 ### 2018年09月06日

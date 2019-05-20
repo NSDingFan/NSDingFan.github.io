@@ -364,6 +364,212 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://nsdf.top/github-与-gitlab-对比.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DingFan">
+      <meta itemprop="description" content="Hi! 这里是DF<br/>一个正在成长中的程序员">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DF Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/github-与-gitlab-对比.html" itemprop="url">
+                  GitHub 与 GitLab 对比
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-20 16:36:44 / 修改时间：16:51:27" itemprop="dateCreated datePublished" datetime="2019-05-20T16:36:44+08:00">2019-05-20</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/github-与-gitlab-对比.html#comments" itemprop="discussionUrl">
+                
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="github-与-gitlab-对比.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="整体区别"><a href="#整体区别" class="headerlink" title="整体区别"></a>整体区别</h2><p>最大的区别在于开源，GitHub的使用更偏向于开源，用户可以免费的建立公开的库，私有库服务收费。并且目前是世界上最大的开源社区。开源项目非常多。而GitLab则更偏向于私有项目。用户可以免费的建立私有库，这对于我的个人项目来说很方便，可以将自己不想公开的项目存放在这里。</p>
+<p>其次在于功能，GitLab拥有很多GitHub上没有的功能，比如web-IDE，直接在浏览器上编译项目文件， 比如对Docker的支持等等。而且可以设置分享权限，在多人开发时很有用。</p>
+<p>整体打开速度上，GitHub稍微快一些，两个网站目前都可以正常访问。</p>
+<h2 id="使用-GitHub-Desktop-管理-GitLab"><a href="#使用-GitHub-Desktop-管理-GitLab" class="headerlink" title="使用 GitHub Desktop 管理 GitLab"></a>使用 GitHub Desktop 管理 GitLab</h2><ol>
+<li>打开GitLab上的项目，复制 https 链接</li>
+<li>打开电脑上的GitHub Desktop， 点击File-&gt;Clone Repostiory</li>
+<li>在弹出窗口上选择URL页面，输入第一步复制的URL，然后选择本地路径。点击Clone</li>
+<li><p>在clone 过程中，可能会有弹窗，要求输入用户名和密码：</p>
+<ol>
+<li>如果GitLab账号没有设置二步验证，输入GitLab的用户名和密码</li>
+<li><p>如果使用了二步验证，则需要输入个人访问令牌(Access Tokens)：</p>
+<ol>
+<li>点击GitLab页面右上角的头像-&gt; Settings -&gt; Access Tokens</li>
+<li>自定义一个Name，并勾选赋予其的权限域，然后点击 Create pers…</li>
+<li><p>一定要及时复制保存给出的访问令牌，这个只会显示一次。</p>
+<p> <img src="/images/post/github-vs-gitlab-00001.jpg" alt=""></p>
+</li>
+<li>回到GitHub Desktop弹出的界面，用户名输入 自定义的Name，密码输入给出的访问令牌（第三步的这个）</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>如果一切顺利，应该就完成了。</li>
+</ol>
+<h2 id="GitHub-pages-vs-GitLab-Pages"><a href="#GitHub-pages-vs-GitLab-Pages" class="headerlink" title="GitHub pages vs GitLab Pages"></a>GitHub pages vs GitLab Pages</h2><p>可以直接看这个<a href="https://about.gitlab.com/comparison/gitlab-pages-vs-github-pages.html" target="_blank" rel="noopener">网页</a>，给出了很多对比。<br>几个比较吸引我的点：</p>
+<ol>
+<li>可以将blog保存为私有项目</li>
+<li>可以为自定义域名添加SSL（https）<ul>
+<li>这一点在github pages 也可以实现 </li>
+</ul>
+</li>
+<li>对jekyll等的支持更加全面</li>
+</ol>
+<h2 id="使用-Terminal-管理-GitHub-和-GitLab"><a href="#使用-Terminal-管理-GitHub-和-GitLab" class="headerlink" title="使用 Terminal 管理 GitHub 和 GitLab"></a>使用 Terminal 管理 GitHub 和 GitLab</h2><p> 咕咕咕~~~</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+    <div>
+      
+    </div>
+    
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://nsdf.top/台场限定结晶兽.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2085,200 +2291,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://nsdf.top/leetcode-219-存在重复元素-ii-contains-duplicate-ii.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="DingFan">
-      <meta itemprop="description" content="Hi! 这里是DF<br/>一个正在成长中的程序员">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="DF Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/leetcode-219-存在重复元素-ii-contains-duplicate-ii.html" itemprop="url">
-                  LeetCode-219.存在重复元素 II | Contains Duplicate II
-                </a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-09-03 02:33:33" itemprop="dateCreated datePublished" datetime="2018-09-03T02:33:33+08:00">2018-09-03</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-09-29 21:12:20" itemprop="dateModified" datetime="2018-09-29T21:12:20+08:00">2018-09-29</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/leetcode-219-存在重复元素-ii-contains-duplicate-ii.html#comments" itemprop="discussionUrl">
-                
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="leetcode-219-存在重复元素-ii-contains-duplicate-ii.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p><a href="https://leetcode-cn.com/problems/contains-duplicate-ii/" target="_blank" rel="noopener">题目链接</a></p>
-</blockquote>
-<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给定一个整数数组和一个整数 k，判断数组中是否存在两个不同的索引 i 和 j，使得 nums [i] = nums [j]，并且 i 和 j 的差的绝对值最大为 k。</p>
-<p>示例 1:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: nums = [1,2,3,1], k = 3</span><br><span class="line">输出: true</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/leetcode-219-存在重复元素-ii-contains-duplicate-ii.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-    <div>
-      
-    </div>
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2330,7 +2342,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-count">16</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2357,7 +2369,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -2454,7 +2468,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">38</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">42</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

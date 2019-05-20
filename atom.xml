@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://nsdf.top/"/>
-  <updated>2018-09-30T17:17:59.746Z</updated>
+  <updated>2019-05-20T08:51:27.689Z</updated>
   <id>https://nsdf.top/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GitHub 与 GitLab 对比</title>
+    <link href="https://nsdf.top/github-%E4%B8%8E-gitlab-%E5%AF%B9%E6%AF%94.html"/>
+    <id>https://nsdf.top/github-与-gitlab-对比.html</id>
+    <published>2019-05-20T08:36:44.857Z</published>
+    <updated>2019-05-20T08:51:27.689Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;整体区别&quot;&gt;&lt;a href=&quot;#整体区别&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Git" scheme="https://nsdf.top/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="https://nsdf.top/tags/Git/"/>
+    
+      <category term="GitHub" scheme="https://nsdf.top/tags/GitHub/"/>
+    
+      <category term="GitLab" scheme="https://nsdf.top/tags/GitLab/"/>
+    
+      <category term="GitHub Desktop" scheme="https://nsdf.top/tags/GitHub-Desktop/"/>
+    
+  </entry>
   
   <entry>
     <title>台场限定结晶兽</title>
@@ -272,11 +304,11 @@
     
       <category term="Python" scheme="https://nsdf.top/tags/Python/"/>
     
+      <category term="LeetCode-Easy" scheme="https://nsdf.top/tags/LeetCode-Easy/"/>
+    
       <category term="贪心算法" scheme="https://nsdf.top/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
     
       <category term="Python 列表解析" scheme="https://nsdf.top/tags/Python-%E5%88%97%E8%A1%A8%E8%A7%A3%E6%9E%90/"/>
-    
-      <category term="LeetCode-Easy" scheme="https://nsdf.top/tags/LeetCode-Easy/"/>
     
   </entry>
   
@@ -303,13 +335,13 @@
     
       <category term="Python" scheme="https://nsdf.top/tags/Python/"/>
     
-      <category term="LeetCode-Easy" scheme="https://nsdf.top/tags/LeetCode-Easy/"/>
-    
       <category term="哈希表" scheme="https://nsdf.top/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
     
       <category term="列表" scheme="https://nsdf.top/tags/%E5%88%97%E8%A1%A8/"/>
     
       <category term="字典" scheme="https://nsdf.top/tags/%E5%AD%97%E5%85%B8/"/>
+    
+      <category term="LeetCode-Easy" scheme="https://nsdf.top/tags/LeetCode-Easy/"/>
     
   </entry>
   

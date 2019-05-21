@@ -11,3 +11,4 @@ db.json
 *.log
 node_modules/
 .deploy*/
+themes/next/source/lib/needsharebutton/
